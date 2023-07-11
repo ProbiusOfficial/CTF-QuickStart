@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Document
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
   <div class="content">
-    <div class="page-404">
-        <h1>404</h1>
-        <p>You are lost this page</p>
-        <p class="info">
-            you've reached the edge of universe.The Page you've requested , can't befound. Don't Worry , you can 
+   <div class="page-404">
+    <h1>
+     404
+    </h1>
+    <p>
+     You are lost this page
+    </p>
+    <p class="info">
+     you've reached the edge of universe.The Page you've requested , can't befound. Don't Worry , you can 
             return to previous page.
-        </p>
-        <button class="go-home btn">GO HOME</button>
-        <button class="back btn">BACK</button>
-    </div>
-    <div class="astronaut">
-        <img src="./asset/astronaut.png" class="astronaut-img" alt="">
-    </div>
+    </p>
+    <button class="go-home btn">
+     <a href="https://ctf.tj.cn/">
+      GO HOME
+     </a>
+    </button>
+    <button class="back btn" onclick="history.back();">
+     BACK
+    </button>
+   </div>
+   <div class="astronaut">
+    <img alt="" class="astronaut-img" src="./asset/astronaut.png"/>
+   </div>
   </div>
+ </body>
 </html>
