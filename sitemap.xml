@@ -2,57 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.xxx.com/</loc>
-         <lastmod>2023-07-10</lastmod>
+         <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/Blog/</loc>
-         <lastmod>2023-07-10</lastmod>
+         <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/CTFevent/</loc>
-         <lastmod>2023-07-10</lastmod>
+         <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/CTFtool/</loc>
-         <lastmod>2023-07-10</lastmod>
+         <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/Links/</loc>
-         <lastmod>2023-07-10</lastmod>
+         <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/NSSCTF%E5%B9%B3%E5%8F%B0%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
-         <lastmod>2023-07-10</lastmod>
+         <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/preface/</loc>
-         <lastmod>2023-07-10</lastmod>
+         <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/preface/NSSCTF%E5%B9%B3%E5%8F%B0%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
-         <lastmod>2023-07-10</lastmod>
+         <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/preface/about/</loc>
-         <lastmod>2023-07-10</lastmod>
+         <lastmod>2023-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.xxx.com/preface/how_to_use/</loc>
+         <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/start/</loc>
-         <lastmod>2023-07-10</lastmod>
+         <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/start/NSSCTF%E5%B9%B3%E5%8F%B0%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
-         <lastmod>2023-07-10</lastmod>
+         <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
