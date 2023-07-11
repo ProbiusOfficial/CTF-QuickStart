@@ -21,16 +21,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.xxx.com/envset/</loc>
-         <lastmod>2023-07-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.xxx.com/envset/CTFtool/</loc>
-         <lastmod>2023-07-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://www.xxx.com/preface/</loc>
          <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
@@ -42,6 +32,16 @@
     </url>
     <url>
          <loc>https://www.xxx.com/preface/usage/</loc>
+         <lastmod>2023-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.xxx.com/set_environment/</loc>
+         <lastmod>2023-07-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.xxx.com/set_environment/CTFtool/</loc>
          <lastmod>2023-07-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
