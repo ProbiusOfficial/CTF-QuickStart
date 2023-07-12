@@ -12,27 +12,27 @@
         <meta name="author" content="Probius">
       
       
-        <link rel="canonical" href="https://www.xxx.com/ctf_evnset/">
+        <link rel="canonical" href="https://www.xxx.com/ctf_web/xss/">
       
       
-        <link rel="prev" href="../ctf_start/">
+        <link rel="prev" href="../sql_injection/">
       
       
-        <link rel="next" href="CTFtool/">
+        <link rel="next" href="../php_unserialize/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
     
     
       
-        <title>2.     环境配置 - Hello CTF</title>
+        <title>4.2.   XSS攻击 - Hello CTF</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -48,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,11 +78,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#2" class="md-skip">
-          跳转至
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -95,9 +90,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href=".." title="Hello CTF" class="md-header__button md-logo" aria-label="Hello CTF" data-md-component="logo">
+    <a href="../.." title="Hello CTF" class="md-header__button md-logo" aria-label="Hello CTF" data-md-component="logo">
       
-  <img src="../assets/images/logo.png" alt="logo">
+  <img src="../../assets/images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2. &nbsp; &nbsp; 环境配置
+              4.2. &nbsp; XSS攻击
             
           </span>
         </div>
@@ -226,9 +221,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Hello CTF" class="md-nav__button md-logo" aria-label="Hello CTF" data-md-component="logo">
+    <a href="../.." title="Hello CTF" class="md-nav__button md-logo" aria-label="Hello CTF" data-md-component="logo">
       
-  <img src="../assets/images/logo.png" alt="logo">
+  <img src="../../assets/images/logo.png" alt="logo">
 
     </a>
     Hello CTF
@@ -278,7 +273,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../ctf_preface/">0. &nbsp; &nbsp; 前言</a>
+          <a href="../../ctf_preface/">0. &nbsp; &nbsp; 前言</a>
           
             <label for="__nav_1">
               <span class="md-nav__icon md-icon"></span>
@@ -301,7 +296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ctf_preface/about/" class="md-nav__link">
+      <a href="../../ctf_preface/about/" class="md-nav__link">
         0.1. &nbsp;  关于本书
       </a>
     </li>
@@ -315,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ctf_preface/usage/" class="md-nav__link">
+      <a href="../../ctf_preface/usage/" class="md-nav__link">
         0.2. &nbsp;  食用方法
       </a>
     </li>
@@ -355,7 +350,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../ctf_start/">1. &nbsp; &nbsp; 快速开始</a>
+          <a href="../../ctf_start/">1. &nbsp; &nbsp; 快速开始</a>
           
         </div>
       
@@ -380,16 +375,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
         
@@ -413,8 +406,8 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index md-nav__link--active">
-          <a href="./">2. &nbsp; &nbsp; 环境设置</a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../ctf_evnset/">2. &nbsp; &nbsp; 环境设置</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -422,7 +415,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           2. &nbsp; &nbsp; 环境设置
@@ -437,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="CTFtool/" class="md-nav__link">
+      <a href="../../ctf_evnset/CTFtool/" class="md-nav__link">
         2.0. &nbsp; 工具一览
       </a>
     </li>
@@ -451,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Web.md" class="md-nav__link">
+      <a href="../../ctf_evnset/Web.md" class="md-nav__link">
         2.1. &nbsp; Web环境设置
       </a>
     </li>
@@ -465,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="MISC.md" class="md-nav__link">
+      <a href="../../ctf_evnset/MISC.md" class="md-nav__link">
         2.2. &nbsp; MISC环境设置
       </a>
     </li>
@@ -479,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Crypto.md" class="md-nav__link">
+      <a href="../../ctf_evnset/Crypto.md" class="md-nav__link">
         2.3. &nbsp; Crypto环境设置
       </a>
     </li>
@@ -493,7 +486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="RE.md" class="md-nav__link">
+      <a href="../../ctf_evnset/RE.md" class="md-nav__link">
         2.4. &nbsp; 逆向环境设置
       </a>
     </li>
@@ -507,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="PWN.md" class="md-nav__link">
+      <a href="../../ctf_evnset/PWN.md" class="md-nav__link">
         2.5. &nbsp; PWN环境设置
       </a>
     </li>
@@ -553,7 +546,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../ctf_misc/">3. &nbsp; &nbsp; MISC | 杂项</a>
+          <a href="../../ctf_misc/">3. &nbsp; &nbsp; MISC | 杂项</a>
           
             <label for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
@@ -576,7 +569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ctf_misc/stego/" class="md-nav__link">
+      <a href="../../ctf_misc/stego/" class="md-nav__link">
         3.1. &nbsp; 图片隐写
       </a>
     </li>
@@ -590,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ctf_misc/pcap/" class="md-nav__link">
+      <a href="../../ctf_misc/pcap/" class="md-nav__link">
         3.2. &nbsp; 流量分析
       </a>
     </li>
@@ -604,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ctf_misc/memory/" class="md-nav__link">
+      <a href="../../ctf_misc/memory/" class="md-nav__link">
         3.3. &nbsp; 内存取证
       </a>
     </li>
@@ -624,14 +617,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
       
       
         
@@ -650,7 +645,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../ctf_web/">4. &nbsp; &nbsp; Web | 网络攻防</a>
+          <a href="../">4. &nbsp; &nbsp; Web | 网络攻防</a>
           
             <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
@@ -658,7 +653,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           4. &nbsp; &nbsp; Web | 网络攻防
@@ -673,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ctf_web/sql_injection/" class="md-nav__link">
+      <a href="../sql_injection/" class="md-nav__link">
         4.1. &nbsp; SQL注入
       </a>
     </li>
@@ -685,11 +680,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../ctf_web/xss/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         4.2. &nbsp; XSS攻击
       </a>
+      
     </li>
   
 
@@ -701,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ctf_web/php_unserialize/" class="md-nav__link">
+      <a href="../php_unserialize/" class="md-nav__link">
         4.3. &nbsp; PHP反序列化
       </a>
     </li>
@@ -758,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/how-to-ask/" class="md-nav__link">
+      <a href="../../appendix/how-to-ask/" class="md-nav__link">
         5.1. &nbsp; 提问的智慧
       </a>
     </li>
@@ -772,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/CTFevent/" class="md-nav__link">
+      <a href="../../appendix/CTFevent/" class="md-nav__link">
         5.2. &nbsp; CTF赛事
       </a>
     </li>
@@ -786,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/NSSCTF_Usage/" class="md-nav__link">
+      <a href="../../appendix/NSSCTF_Usage/" class="md-nav__link">
         5.3. &nbsp; NSSCTF平台使用
       </a>
     </li>
@@ -819,8 +822,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -835,7 +836,7 @@
                   
 
   
-    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/tree/main/docs/ctf_evnset/index.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/tree/main/docs/ctf_web/xss.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -843,10 +844,61 @@
   
 
 
-<h1 id="2">2. &nbsp; &nbsp; 环境配置<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
-<div class="center-table">
-<p><img alt="前言" src="../assets/covers/Envset.png" width="70%" /></p>
-</div>
+  <h1>4.2. &nbsp; XSS攻击</h1>
+
+<p>类型介绍:</p>
+<p>反射型</p>
+<p>反射型跨站脚本（Reflected Cross-Site Scripting）是最常见，也是使用最广的一种，可将恶意脚本附加到 URL 地址的参数中</p>
+<p>反射型 XSS 的利用一般是攻击者通过特定手法（如电子邮件），诱使用户去访问一个包含恶意代码的 URL，当受害者点击这些专门设计的链接的时候，恶意代码会直接在受害者主机上的浏览器执行。此类 XSS 通常出现在网站的搜索栏、用户登录口等地方，常用来窃取客户端 Cookies 或进行钓鱼欺骗。</p>
+<p>存储型</p>
+<p>持久型跨站脚本（Persistent Cross-Site Scripting）也等同于存储型跨站脚本（Stored Cross-Site Scripting）。</p>
+<p>此类 XSS 不需要用户单击特定 URL 就能执行跨站脚本，攻击者事先将恶意代码上传或储存到漏洞服务器中，只要受害者浏览包含此恶意代码的页面就会执行恶意代码。持久型 XSS 一般出现在网站留言、评论、博客日志等交互处，恶意脚本存储到客户端或者服务端的数据库中。</p>
+<p>DOM型</p>
+<p>传统的 XSS 漏洞一般出现在服务器端代码中，而 DOM-Based XSS 是基于 DOM 文档对象模型的一种漏洞，所以，受客户端浏览器的脚本代码所影响。客户端 JavaScript 可以访问浏览器的 DOM 文本对象模型，因此能够决定用于加载当前页面的 URL。换句话说，客户端的脚本程序可以通过 DOM 动态地检查和修改页面内容，它不依赖于服务器端的数据，而从客户端获得 DOM 中的数据（如从 URL 中提取数据）并在本地执行。另一方面，浏览器用户可以操纵 DOM 中的一些对象，例如 URL、location 等。用户在客户端输入的数据如果包含了恶意 JavaScript 脚本，而这些脚本没有经过适当的过滤和消毒，那么应用程序就可能受到基于 DOM 的 XSS 攻击。</p>
+<p>常见的标签</p>
+<p>1.alert()</p>
+<p>alert(‘xss’)</p>
+<p>alert(“xss”)</p>
+<p>alert(/xss/)</p>
+<p>alert(document.cookie)</p>
+<p>2.confirm()</p>
+<p>confirm(‘xss’)</p>
+<p>confirm(“xss”)</p>
+<p>confirm(/xss/)</p>
+<p>confirm(document.cookie)</p>
+<p>3.prompt()</p>
+<p>prompt(‘xss’)</p>
+<p>prompt(“xss”)</p>
+<p>prompt(/xss/)</p>
+<p>prompt(document.coolkie)</p>
+<p>(/xss/)以上三种方法都可以实现，但是会多出两个‘/’</p>
+<p>4.document.write()</p>
+<ul>
+<li>
+<p>document.write('<script>alert("xss")&lt;\/script&gt;')</p>
+</li>
+<li>
+<p>document.write('<script>alert(/xss/)&lt;\/script&gt;')</p>
+</li>
+<li>
+<p>document.write('<script>alert(document.cookie)&lt;\/script&gt;')</p>
+</li>
+</ul>
+<p>括号里不能使用单引号；</p>
+<p>alert也可以换成其他弹窗方式；</p>
+<p>5.console.log()</p>
+<p>console.log(alert(‘xss’))</p>
+<p>console.log(alert(“xss”))</p>
+<p>console.log(alert(/xss/))</p>
+<p>console.log(alert(document.cookie))</p>
+<p>6.输出控制台</p>
+<p>1.console.error(111)</p>
+<p>2.console.log(document.cookie)</p>
+<p>3.console.dir(111)
+靶场练习</p>
+<p>https://alf.nu/alert1</p>
+<p>https://github.com/do0dl3/xss-labs</p>
+<p>http://xss-ctf.xiejiahe.com/</p>
 
 
 
@@ -928,7 +980,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" hidden>
         
           
-          <a href="../ctf_start/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 快速开始" rel="prev">
+          <a href="../sql_injection/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 4.1. &amp;nbsp; SQL注入" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -937,20 +989,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                快速开始
+                4.1. &nbsp; SQL注入
               </div>
             </div>
           </a>
         
         
           
-          <a href="CTFtool/" class="md-footer__link md-footer__link--next" aria-label="下一页: 2.0. &amp;nbsp; 工具一览" rel="next">
+          <a href="../php_unserialize/" class="md-footer__link md-footer__link--next" aria-label="下一页: 4.3. &amp;nbsp; PHP反序列化" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                2.0. &nbsp; 工具一览
+                4.3. &nbsp; PHP反序列化
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1018,13 +1070,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.action.edit", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.b425cdc4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b425cdc4.min.js"></script>
       
         
-          <script src="../javascripts/mathjax.js"></script>
+          <script src="../../javascripts/mathjax.js"></script>
         
       
         

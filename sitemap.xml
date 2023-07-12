@@ -75,4 +75,24 @@
          <lastmod>2023-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://www.xxx.com/ctf_web/</loc>
+         <lastmod>2023-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.xxx.com/ctf_web/php_unserialize/</loc>
+         <lastmod>2023-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.xxx.com/ctf_web/sql_injection/</loc>
+         <lastmod>2023-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.xxx.com/ctf_web/xss/</loc>
+         <lastmod>2023-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
