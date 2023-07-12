@@ -12,27 +12,27 @@
         <meta name="author" content="Probius">
       
       
-        <link rel="canonical" href="https://www.xxx.com/ctf_evnset/">
+        <link rel="canonical" href="https://www.xxx.com/ctf_misc/pcap/">
       
       
-        <link rel="prev" href="../ctf_start/">
+        <link rel="prev" href="../stego/">
       
       
-        <link rel="next" href="CTFtool/">
+        <link rel="next" href="../memory/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
     
     
       
-        <title>2.     环境配置 - Hello CTF</title>
+        <title>3.2.   流量分析 - Hello CTF</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -48,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -95,9 +95,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href=".." title="Hello CTF" class="md-header__button md-logo" aria-label="Hello CTF" data-md-component="logo">
+    <a href="../.." title="Hello CTF" class="md-header__button md-logo" aria-label="Hello CTF" data-md-component="logo">
       
-  <img src="../assets/images/logo.png" alt="logo">
+  <img src="../../assets/images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2. &nbsp; &nbsp; 环境配置
+              3.2. &nbsp; 流量分析
             
           </span>
         </div>
@@ -216,8 +216,6 @@
           
             
               
-                
-              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -226,9 +224,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Hello CTF" class="md-nav__button md-logo" aria-label="Hello CTF" data-md-component="logo">
+    <a href="../.." title="Hello CTF" class="md-nav__button md-logo" aria-label="Hello CTF" data-md-component="logo">
       
-  <img src="../assets/images/logo.png" alt="logo">
+  <img src="../../assets/images/logo.png" alt="logo">
 
     </a>
     Hello CTF
@@ -278,7 +276,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../ctf_preface/">0. &nbsp; &nbsp; 前言</a>
+          <a href="../../ctf_preface/">0. &nbsp; &nbsp; 前言</a>
           
             <label for="__nav_1">
               <span class="md-nav__icon md-icon"></span>
@@ -301,7 +299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ctf_preface/about/" class="md-nav__link">
+      <a href="../../ctf_preface/about/" class="md-nav__link">
         0.1. &nbsp;  关于本书
       </a>
     </li>
@@ -315,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ctf_preface/usage/" class="md-nav__link">
+      <a href="../../ctf_preface/usage/" class="md-nav__link">
         0.2. &nbsp;  食用方法
       </a>
     </li>
@@ -355,7 +353,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../ctf_start/">1. &nbsp; &nbsp; 快速开始</a>
+          <a href="../../ctf_start/">1. &nbsp; &nbsp; 快速开始</a>
           
         </div>
       
@@ -380,16 +378,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
         
@@ -413,8 +409,8 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index md-nav__link--active">
-          <a href="./">2. &nbsp; &nbsp; 环境设置</a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../ctf_evnset/">2. &nbsp; &nbsp; 环境设置</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -422,7 +418,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           2. &nbsp; &nbsp; 环境设置
@@ -437,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="CTFtool/" class="md-nav__link">
+      <a href="../../ctf_evnset/CTFtool/" class="md-nav__link">
         2.0. &nbsp; 工具一览
       </a>
     </li>
@@ -451,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Web.md" class="md-nav__link">
+      <a href="../../ctf_evnset/Web.md" class="md-nav__link">
         2.1. &nbsp; Web环境设置
       </a>
     </li>
@@ -465,7 +461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="MISC.md" class="md-nav__link">
+      <a href="../../ctf_evnset/MISC.md" class="md-nav__link">
         2.2. &nbsp; MISC环境设置
       </a>
     </li>
@@ -479,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Crypto.md" class="md-nav__link">
+      <a href="../../ctf_evnset/Crypto.md" class="md-nav__link">
         2.3. &nbsp; Crypto环境设置
       </a>
     </li>
@@ -493,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="RE.md" class="md-nav__link">
+      <a href="../../ctf_evnset/RE.md" class="md-nav__link">
         2.4. &nbsp; 逆向环境设置
       </a>
     </li>
@@ -507,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="PWN.md" class="md-nav__link">
+      <a href="../../ctf_evnset/PWN.md" class="md-nav__link">
         2.5. &nbsp; PWN环境设置
       </a>
     </li>
@@ -527,14 +523,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
       
       
         
@@ -553,7 +551,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           3. &nbsp; &nbsp; MISC | 杂项
@@ -566,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ctf_misc/index.md" class="md-nav__link">
+      <a href="../index.md" class="md-nav__link">
         None
       </a>
     </li>
@@ -580,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ctf_misc/stego/" class="md-nav__link">
+      <a href="../stego/" class="md-nav__link">
         3.1. &nbsp; 图片隐写
       </a>
     </li>
@@ -592,11 +590,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../ctf_misc/pcap/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          3.2. &nbsp; 流量分析
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         3.2. &nbsp; 流量分析
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    常用工具
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -608,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ctf_misc/memory/" class="md-nav__link">
+      <a href="../memory/" class="md-nav__link">
         3.3. &nbsp; 内存取证
       </a>
     </li>
@@ -663,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/how-to-ask/" class="md-nav__link">
+      <a href="../../appendix/how-to-ask/" class="md-nav__link">
         4.1. &nbsp; 提问的智慧
       </a>
     </li>
@@ -677,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appendix/CTFevent/" class="md-nav__link">
+      <a href="../../appendix/CTFevent/" class="md-nav__link">
         4.2. &nbsp; 附录
       </a>
     </li>
@@ -699,8 +738,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -712,6 +749,21 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    常用工具
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -726,7 +778,7 @@
                   
 
   
-    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/tree/main/docs/ctf_evnset/index.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/ProbiusOfficial/CTF-QuickStart/tree/main/docs/ctf_misc/pcap.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -734,65 +786,256 @@
   
 
 
-<h1 id="2">2. &nbsp; &nbsp; 环境配置<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
-<div class="center-table">
-<p><img alt="前言" src="../assets/covers/Envset.png" width="70%" /></p>
-</div>
+<h1 id="_1">前言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>版权声明：</p>
+<p>​ 文档源于项目<a href="https://github.com/ProbiusOfficial/CTF-QuickStart">ProbiusOfficial/CTF-QuickStart: 针对0基础新手编写的CTF快速入门手册 (github.com)</a></p>
+<p>​ 原作者为 GaoNengwWw</p>
+</blockquote>
+<p>流量分析与取证在misc中也是较为常见的题目，流量分析主要是根据元数据（不是通信内容本身）识别对手活动和通信模式，每条记录多达几兆字节的全部活动内容，可能只产生100字节的元数据，如端点（包括ip地址和域名）、端口、收发字节数、连接时长及起止时间，我们将这样一组元数据成为“网络流”（network flows）。</p>
+<h2 id="_2">常用工具<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>流量分析中最常使用的工具是 <code>wireshark</code> 当然也有其他的工具例如 <code>BruteShark</code>. </p>
+<p>wireshark下载地址</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>链接: https://pan.baidu.com/s/1WSzZkBhJECTY_ehwSs5U8Q?pwd=w1wa 
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>提取码: w1wa 复制这段内容后打开百度网盘手机App，操作更方便哦
+</code></pre></div>
+<h1 id="wireshark">Wireshark 基本使用方法<a class="headerlink" href="#wireshark" title="Permanent link">&para;</a></h1>
+<h2 id="_3">窗口组成<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><img alt="1688566267678.png" src="https://img1.imgtp.com/2023/07/05/JpzvTYBV.png" /></p>
+<p>上图是Wireshark的基本窗口组成，接下来将会详细介绍每一个面板的功能以及基本使用</p>
+<p><img alt="1688566334584.png" src="https://img1.imgtp.com/2023/07/05/TQWw9z1R.png" /></p>
+<p>显示过滤窗口是最常用的功能之一，它可以迅速帮助我们筛选出我们所需要的包。例如，当我们需要分析TLS的时候，可以直接输入<code>tls</code>. 不过需要注意的是，筛选语法对大小写敏感 <code>TLS !== tls</code></p>
+<h2 id="_4">显示过滤器<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>Wireshark的显示过滤器允许您集中关注感兴趣的数据包，同时隐藏其他的包，本章你将学习到基本的显示过滤器语法</p>
+<h2 id="_5">基本构成<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>过滤器表达式由一个或多个原语(Primitive)组成</p>
+<p>形式化表达式为: <code>[not] primitive [and|or [not] primitive ...]</code></p>
+<blockquote>
+<p>[A] 表示A是可选的</p>
+<p>\&lt;x> 表示x为必选</p>
+<p>and(&amp;&amp;), or(||), not(!) 表示与或非
+</p>
+</blockquote>
+<h2 id="primitive">原语(Primitive)语法<a class="headerlink" href="#primitive" title="Permanent link">&para;</a></h2>
+<p><code>protocol[.attr1.attr2.attr3 ... .stringN] [Comparison operator] [Value]</code></p>
+<h3 id="proctol">proctol<a class="headerlink" href="#proctol" title="Permanent link">&para;</a></h3>
+<p>protocol表示需要显示的协议，目前wireshark支持的协议多达 2894 种，具体可以点击 <code>视图 -&gt; 内部 -&gt; Supported Protocols</code> 查看</p>
+<p>常用的大概如下几种</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>tcp, udp, http, http2, http3, tls, dns ...
+</code></pre></div>
+<h3 id="attr">attr<a class="headerlink" href="#attr" title="Permanent link">&para;</a></h3>
+<p>attr一般用来表示protocol的属性，例如 <code>ip.addr == x.x.x.x</code> 表示，匹配ip地址为x.x.x.x的包</p>
+<h3 id="comparison-operator">Comparison operator (比较值)<a class="headerlink" href="#comparison-operator" title="Permanent link">&para;</a></h3>
+<p>你可以使用语义化的英文缩写或逻辑符号来进一步的筛选你所需要的包，例如 <code>ip.addr eq 11.4.51.4</code> 表示，筛选所有ip包含 11.4.51.4 的包 该表达式与 <code>ip.addr == 11.4.51.4</code> 是等价的</p>
+<p>常见的比较值如下表所示</p>
+<table>
+<thead>
+<tr>
+<th align="center">English</th>
+<th align="center">C-like</th>
+<th align="center">example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">eg</td>
+<td align="center">==</td>
+<td align="center">ip.addr == 1.2.3.4</td>
+</tr>
+<tr>
+<td align="center">ne</td>
+<td align="center">!=</td>
+<td align="center">ip.addr != 1.2.3.4</td>
+</tr>
+<tr>
+<td align="center">gt</td>
+<td align="center">&gt;</td>
+<td align="center">frame.len &gt; 10</td>
+</tr>
+<tr>
+<td align="center">lt</td>
+<td align="center">&lt;</td>
+<td align="center">frame.len &lt; 10</td>
+</tr>
+<tr>
+<td align="center">ge</td>
+<td align="center">&gt;=</td>
+<td align="center">frame.len &gt;= 10</td>
+</tr>
+<tr>
+<td align="center">le</td>
+<td align="center">&lt;=</td>
+<td align="center">frame.len &lt;= 10</td>
+</tr>
+<tr>
+<td align="center">contains</td>
+<td align="center">\</td>
+<td align="center">udp.payload contains "ftp"</td>
+</tr>
+<tr>
+<td align="center">matches</td>
+<td align="center">~</td>
+<td align="center">http.host matches "ace.(org | com | net)"</td>
+</tr>
+<tr>
+<td align="center">bitwise_and</td>
+<td align="center">&amp;</td>
+<td align="center">tcp.flags &amp; 0x02</td>
+</tr>
+</tbody>
+</table>
+<h3 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h3>
+<h4 id="_6">整数<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<p>可以是8、16、24、32或64位整数，可以使用十进制、八进制、十六进制或二进制来表示</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>frame.len &gt; 1500
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>frame.len &gt; 02734
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>frame.len &gt; 0xff
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>frame.len &gt; 0b1100
+</code></pre></div>
+<p>上述均为有效表达</p>
+<h4 id="_7">布尔<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p>可以直接使用True(TRUE)或False(FALSE)，也可以使用1来表达True，0表达False</p>
+<p>例如，当tcp.flags.syn为True时，仅会输出SYN包.</p>
+<h4 id="ethernet-address">Ethernet address<a class="headerlink" href="#ethernet-address" title="Permanent link">&para;</a></h4>
+<p>由冒号(:)、句号(.)、短划线(-)分割的六个字节</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>eth.dst == ff:ff:ff:ff:ff:ff
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>eth.dst == ff-ff-ff-ff-ff-ff
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>eth.dst == ffff.ffff.ffff
+</code></pre></div>
+<h4 id="ipv4">IPv4地址<a class="headerlink" href="#ipv4" title="Permanent link">&para;</a></h4>
+<p>可以直接 <code>ip.addr == 192.168.0.1</code> 表达，如果你需要选一类地址，可以使用CIDR表达法</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ip.addr == 192.168.0.0/16
+</code></pre></div>
+<h4 id="ipv6">IPv6<a class="headerlink" href="#ipv6" title="Permanent link">&para;</a></h4>
+<p>与IPv4除了地址表达有差异外，其他无不同</p>
+<h4 id="_8">字符串类型<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p><code>http.request.uri == "https://www.bilibili.com/"</code> </p>
+<p>字符串文字用双引号指定，也可以使用十六进制<code>\xff</code>或八进制<code>\ddd</code>来转移，其中<code>f</code>与<code>d</code>为十六进制和八进制数字</p>
+<h4 id="_9">日期与时间<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<p>在wireshark中GMT、UTC、ISO8601表达法都是被允许的。同时，也可以对事件进行范围比较</p>
+<p><code>frame.time &lt; "2020-01-01"</code> 该表达式是符合语法的</p>
+<h3 id="combining-expressions">Combining Expressions (组合表达式)<a class="headerlink" href="#combining-expressions" title="Permanent link">&para;</a></h3>
+<p>有些时候我们需要组合其他Primitive(原语)来满足更复杂的筛选需求，例如我们需要筛选TCP包且发送方为172.17.0.2但我们不需要ack包。</p>
+<p>很明显，一个Primitive(原语)无法满足我们的需求，这个时候我们需要将多个Primitive(原语)使用组合表达式来组合多个Primitive(原语)或称Express(表达式)</p>
+<p>常见的组合表达式如下</p>
+<table>
+<thead>
+<tr>
+<th align="center">English</th>
+<th align="center">C-Like</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">and</td>
+<td align="center">&amp;&amp;</td>
+<td align="center">逻辑与</td>
+</tr>
+<tr>
+<td align="center">or</td>
+<td align="center">||</td>
+<td align="center">逻辑或</td>
+</tr>
+<tr>
+<td align="center">xor</td>
+<td align="center">^</td>
+<td align="center">异或</td>
+</tr>
+<tr>
+<td align="center">not</td>
+<td align="center">!</td>
+<td align="center">逻辑非</td>
+</tr>
+<tr>
+<td align="center">in</td>
+<td align="center">\</td>
+<td align="center">集合成员</td>
+</tr>
+<tr>
+<td align="center">[...]</td>
+<td align="center">\</td>
+<td align="center">切片</td>
+</tr>
+</tbody>
+</table>
+<p>现在让我们尝试一下实现刚刚的要求，也就是<code>筛选TCP包且发送方为172.17.0.2但我们不需要ack包</code>，我们可以如下实现</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>tcp and ip.src == 172.17.0.2 and tcp.flags.ack == 0
+</code></pre></div>
+<p>这样，我们就可以成功的筛选出非ack包了</p>
+<p><img alt="1688696890506.png" src="https://img1.imgtp.com/2023/07/07/FLE3g5uC.png" /></p>
+<h1 id="_10">实战<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h1>
+<p>实战是验证是否掌握的最佳方案，本章使用<span class="arithmatex">\(DDCTF 流量分析\)</span>题目作为实战</p>
+<h2 id="ddctf">DDCTF 流量分析<a class="headerlink" href="#ddctf" title="Permanent link">&para;</a></h2>
+<p>下载好习题后，解压，发现有一个txt和pcap文件。打开txt，内如如下。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>流量分析
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>200pt
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>提示一：若感觉在中间某个容易出错的步骤，若有需要检验是否正确时，可以比较MD5: 90c490781f9c320cd1ba671fcb112d1c
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>提示二：注意补齐私钥格式
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>-----BEGIN RSA PRIVATE KEY-----
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>-----END RSA PRIVATE KEY-----
+</code></pre></div>
+<p>从第一点得知，我们可能会解密出一个文件</p>
+<p>从第二点得知，我们会需要一个密钥。</p>
+<p>问题来了，密钥可能在哪？会不会解密出来的文件就是密钥，或者说是一个其他的文件但内部隐藏着密钥？</p>
+<p>带着这两个问题，我们打开pcap文件</p>
+<p><img alt="1688697976491.png" src="https://img1.imgtp.com/2023/07/07/vAvZupKq.png" /></p>
+<p>可以看到右下角一共10183个分组，慢慢看恐怕是要看到天荒地老了。我们不妨筛选一下，但问题在于我们如何筛选？</p>
+<p>不妨先统计一下，都有哪些协议?占比有多少?从而进一步的分析。点击<code>统计 -&gt; 协议分级</code></p>
+<p><img alt="1688698095900.png" src="https://img1.imgtp.com/2023/07/07/XNANdGK4.png" /></p>
+<p>从上到下我们简单分析一下，从上图我们可一看到基本上所有的帧都是由IPv4发送的，那么IPv6就可以不用看了。紧接着，我们发现，存在两个协议，UDP与TCP。TCP比UDP有更多的分组，而且我们可以注意到，有一个TLS和FTP协议。</p>
+<p>还记得刚刚的文档提示吗</p>
+<blockquote>
+<p>若感觉在中间某个容易出错的步骤，若有需要检验是否正确时，可以比较MD5: 90c490781f9c320cd1ba671fcb112d1c</p>
+</blockquote>
+<p>那么，有没有一种可能，使用了ftp传输了文件呢？我们不妨分析一下，右键<code>FTP Data -&gt; 作为过滤器应用 -&gt; 选中</code></p>
+<p><img alt="1688698895022.png" src="https://img1.imgtp.com/2023/07/07/Kr0tqx4N.png" /></p>
+<p>紧接着，关闭 <code>协议分级</code> 窗口，点击 <code>文件 -&gt; 导出对象 -&gt; FTP-DATA</code></p>
+<p><img alt="1688699213877.png" src="https://img1.imgtp.com/2023/07/07/I0oZTOFP.png" /></p>
+<p>选择<code>FL-G.zip</code>点击<code>save</code></p>
+<p><img alt="1688699267185.png" src="https://img1.imgtp.com/2023/07/07/Ki8cnVQq.png" /></p>
+<p>解压发现需要密码，MD5也是错误的。回到统计图</p>
+<p><img alt="1688698095900.png" src="https://img1.imgtp.com/2023/07/07/XNANdGK4.png" /></p>
+<p>我们还发现<code>SMTP</code>协议，我们不妨也分析一下。在显示筛选器中输入<code>smtp</code>，报文非常的少一共179个报文。</p>
+<p>点击 <code>统计 -&gt; 会话</code> </p>
+<p><img alt="1688707070805.png" src="https://img1.imgtp.com/2023/07/07/JTSxZpCu.png" /></p>
+<p>其中有几个比较大的会话引起了我的注意。我们不妨跟踪一下，看看到底都发送了什么.</p>
+<p>第一个会话是发送了一张base64编码的图片，后面的绘画都是一些html文档。我们先将base64编码转为图片，得到了这样的一幅图片</p>
+<p><img alt="1688707355006.png" src="https://img1.imgtp.com/2023/07/07/9kPzaecT.png" /></p>
+<p>图片上的文字为RSA密钥，OCR识别后对齐密钥格式得到如下</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>-----BEGIN RSA PRIVATE KEY-----
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>MIICXAIBAAKBgQDCm6vZmclJrVH1AAyGuCuSSZ80+mIQiOUQCVNOHYbj8153JfSQ
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>LsJIhbRYS7+zZ1oXvPemWQDv/u/tzegt58q4ciNmcVngluKiygc6Q0tvT7oiSTyO
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>VMX/q5iE2iC1YUIHZEKX3BjjNDxrYvLQzPyGD1EY2DZI06T45FNKYC2VDWIDAQAB
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>AoGAbtWUKUkx371LfRq7B5sqjZVKdpBZe4tL0jg6cX5Djd3Uhk1inR9UXVNw4/y4
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>QGfzYqOn8+Cq7QSoBysHOeXSiPztW2cL09ktPgS1fTQyN6ELNGuiUOYnaTWYZpp/
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>QbRcZ/eHBulVQL1k5M6RVs9BLI9X08RA17EcwumiRfWas6kCQQDvqC0dx12wI jwN
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>czILcoWLig2c2u71Nev9DrWjWHU8eHDuzCJWVOUAHIrkexddWEK2VHd+F13GBCOQ
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>ZCM4prBjAkEAZ+ENahsEjBE4+7H1HdIaw0+goe/45d6A2ew0/1YH6dDZTAZTW9Z9
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>kzV8uz+Mmo5163/JtvwYQCKF39DJGGtqZQJBAKa18XR16fQ9TFL64EQWTQ+tYBZN
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>+04eTWQCmH3haeQ/0Cd9XyHBUveJ42Be8/jeDcIx7dGLxZKa jHbEAfBFnAsCQGq1
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>AnbJ4Z6opJCGu+UP2c8SC8m0bhZJDelPRC8IKE28eB6SotgP61ZqaVmQ+HLJ1/WH
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>/5pfc3AmEyRdfyx6zWUCQCAH4SLJV/kprRz1a1gx8FR5tj4NeHEFFNEgq1gmiwmH
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>2STT5qZWzQFZ8NRe+/otNOHBR2Xk4e8IS+ehIJ3TvyE=
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>-----END RSA PRIVATE KEY-----
+</code></pre></div>
+<p>接着回到协议分级中，我们发现有一些TLS会话，不难想到这是否会和TLS有关？</p>
+<p><img alt="1688698095900.png" src="https://img1.imgtp.com/2023/07/07/XNANdGK4.png" /></p>
+<p>保存到一个txt/pem文件中, 点击<code>编辑 -&gt; 首选项 -&gt; Protocols -&gt; TLS -&gt; RSA key file list -&gt; +</code></p>
+<p><img alt="1688708253242.png" src="https://img1.imgtp.com/2023/07/07/XJrk6N48.png" /></p>
+<p>其余选项可以留空，点击Browse, 选择密钥文件后点击OK.</p>
+<p><img alt="1688708345986.png" src="https://img1.imgtp.com/2023/07/07/7SrW84AW.png" /></p>
+<p>再次打开协议分级，我们发现TLS下多出了 <code>Hypertext Transfer Protocol(http)</code> 协议。</p>
+<p>接下类我们，<code>右键 Hypertext Transfer Protocol(http) -&gt; 作为过滤器应用 -&gt; 选中</code></p>
+<p><img alt="1688708560115.png" src="https://img1.imgtp.com/2023/07/07/N8pM6Ldt.png" /></p>
+<p>单击<code>HTTP流</code></p>
+<p><img alt="1688708595938.png" src="https://img1.imgtp.com/2023/07/07/qwWnX1Pg.png" /></p>
+<p>即可得到flag</p>
 
 
 
-  
 
-
-
-  <h2 id="__comments">评论</h2>
-  <!-- Insert generated snippet here -->
-  
-  <script src="https://giscus.app/client.js"
-  data-repo="ProbiusOfficial/CTF-QuickStart"
-  data-repo-id="R_kgDOJXX6hg"
-  data-category="Show and tell"
-  data-category-id="DIC_kwDOJXX6hs4CXmuV"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="top"
-  data-theme="preferred_color_scheme"
-  data-lang="zh-CN"
-  crossorigin="anonymous"
-  async>
-</script>
-
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    /* Set palette on initial load */
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate" ? "dark" : "light"
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    /* Register event handlers after documented loaded */
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate" ? "dark" : "light"
-
-          /* Instruct Giscus to change theme */
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
 
                 
               </article>
@@ -814,12 +1057,10 @@
   
     
       
-        
-      
-      <nav class="md-footer__inner md-grid" aria-label="页脚" hidden>
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../ctf_start/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 快速开始" rel="prev">
+          <a href="../stego/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 3.1. &amp;nbsp; 图片隐写" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -828,20 +1069,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                快速开始
+                3.1. &nbsp; 图片隐写
               </div>
             </div>
           </a>
         
         
           
-          <a href="CTFtool/" class="md-footer__link md-footer__link--next" aria-label="下一页: 2.0. &amp;nbsp; 工具一览" rel="next">
+          <a href="../memory/" class="md-footer__link md-footer__link--next" aria-label="下一页: 3.3. &amp;nbsp; 内存取证" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                2.0. &nbsp; 工具一览
+                3.3. &nbsp; 内存取证
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -909,13 +1150,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.action.edit", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.b425cdc4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b425cdc4.min.js"></script>
       
         
-          <script src="../javascripts/mathjax.js"></script>
+          <script src="../../javascripts/mathjax.js"></script>
         
       
         

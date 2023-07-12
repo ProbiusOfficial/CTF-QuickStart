@@ -31,6 +31,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://www.xxx.com/ctf_misc/memory/</loc>
+         <lastmod>2023-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.xxx.com/ctf_misc/pcap/</loc>
+         <lastmod>2023-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.xxx.com/ctf_misc/stego/</loc>
+         <lastmod>2023-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://www.xxx.com/ctf_preface/</loc>
          <lastmod>2023-07-12</lastmod>
          <changefreq>daily</changefreq>
