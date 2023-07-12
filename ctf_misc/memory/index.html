@@ -736,7 +736,7 @@
   
 
 
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/eb0e7327bd454ca7b3aeb8d855915202.png" /></p>
+<p><img alt="" src="../images/memory/eb0e7327bd454ca7b3aeb8d855915202.png" /></p>
 <h1 id="_1">前言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>版权声明：</p>
@@ -746,181 +746,181 @@
 <p>内存取证在ctf比赛中也是常见的题目，内存取证是指在计算机系统的内存中进行取证分析，以获取有关计算机系统当前状态的信息。内存取证通常用于分析计算机系统上运行的进程、网络连接、文件、注册表等信息，并可以用于检测和分析恶意软件、网络攻击和其他安全事件</p>
 <h1 id="_2">工具安装<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
 <h2 id="pythonpip">python与pip安装方法<a class="headerlink" href="#pythonpip" title="Permanent link">&para;</a></h2>
-<p>首先就是安装python和pip，在kali和一些linux发行版上，python都是自带的，python和pip安装方法如下：
+<p>首先就是安装python和pip，在kali和一些linux发行版上，python都是自带的，python和pip安装方法如下：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt-get update  #更新源
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo apt-get install python2   #安装python2
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo apt-get install python-pip2   #安装pip2
-</code></pre></div></p>
+</code></pre></div>
 <h2 id="volatility">下载和安装Volatility<a class="headerlink" href="#volatility" title="Permanent link">&para;</a></h2>
 <p>Volatility是一款开源的内存分析框架，主要用于从计算机内存中提取数字证据。它可以用于取证、恶意代码分析、漏洞研究、操作系统学习以及其他安全领域</p>
-<p>Volatility项目地址：
+<p>Volatility项目地址：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>https://github.com/volatilityfoundation/volatility
 </code></pre></div>
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/7a8898fcc1b14b55b7d4810c30ff5689.png" /></p>
-<p>如果你在国外的话，可以直接运行这个命令来获取Volatility项目，在国内用这个命令的话，下载非常慢
+<p><img alt="" src="../images/memory/7a8898fcc1b14b55b7d4810c30ff5689.png" /></p>
+<p>如果你在国外的话，可以直接运行这个命令来获取Volatility项目，在国内用这个命令的话，下载非常慢</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>apt install git
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>git clone https://github.com/volatilityfoundation/volatility.git
-</code></pre></div></p>
-<p>从压缩包里提取文件
+</code></pre></div>
+<p>从压缩包里提取文件</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>unzip [file_name] -d [destination]  #filename：你要提取的压缩包名称，destination：提取后的文件存放位置
-</code></pre></div></p>
-<p>进入文件夹，运行以下命令即可安装
+</code></pre></div>
+<p>进入文件夹，运行以下命令即可安装</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python2 setup.py install
-</code></pre></div></p>
+</code></pre></div>
 <h2 id="_3">依赖安装<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>如果不安装依赖，Volatility很多功能都用不了
+<p>如果不安装依赖，Volatility很多功能都用不了</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip2 install pycryptodome -i https://pypi.tuna.tsinghua.edu.cn/simple
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>pip2 install yara -i https://pypi.tuna.tsinghua.edu.cn/simple
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>pip2 install distorm3 -i https://pypi.tuna.tsinghua.edu.cn/simple
 </code></pre></div>
-如果distorm3安装失败的话，只能手动去安装了</p>
-<p>项目地址：
+<p>如果distorm3安装失败的话，只能手动去安装了</p>
+<p>项目地址：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>https://github.com/vext01/distorm3
 </code></pre></div>
-下载解压后进入文件夹，运行以下命令即可
+<p>下载解压后进入文件夹，运行以下命令即可</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>chmod 777 setup.py
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>python2 setup.py install
-</code></pre></div></p>
-<p>mimikatz脚本文件下载地址
+</code></pre></div>
+<p>mimikatz脚本文件下载地址</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>链接：https://pan.baidu.com/s/1HS65N4UXfuzChB9UU9vveA 
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>提取码：fywk 
 </code></pre></div>
-然后将这个脚本文件移动到/volatility/plugins目录下
+<p>然后将这个脚本文件移动到/volatility/plugins目录下</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>mv mimkatz.py /volatility/plugins/
 </code></pre></div>
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/6550fff74dc845a7862b057bf2d61c71.png" /></p>
-<p>然后安装construct库
+<p><img alt="" src="../images/memory/6550fff74dc845a7862b057bf2d61c71.png" /></p>
+<p>然后安装construct库</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo pip2 install construct==2.5.5-reupload
-</code></pre></div></p>
+</code></pre></div>
 <h1 id="_4">演示题目的下载地址<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
-<p>本片文章使用的案例：
+<p>本片文章使用的案例：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>链接：https://pan.baidu.com/s/1nD-svI98v3yQPPKT0HyEjg 
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>提取码：0dnx 
-</code></pre></div></p>
+</code></pre></div>
 <h1 id="_5">工具的使用方法<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h1>
 <h2 id="_6">获取内存镜像详细信息<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p>imageinfo是Volatility中用于获取内存镜像信息的命令。它可以用于确定内存镜像的操作系统类型、版本、架构等信息，以及确定应该使用哪个插件进行内存分析
+<p>imageinfo是Volatility中用于获取内存镜像信息的命令。它可以用于确定内存镜像的操作系统类型、版本、架构等信息，以及确定应该使用哪个插件进行内存分析</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>python2 vol.py -f Challenge.raw imageinfo  #f：指定分析的内存镜像文件名
 </code></pre></div>
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/3422e6b9f4134545b38e28f440bf4b43.png" />
+<p><img alt="" src="../images/memory/3422e6b9f4134545b38e28f440bf4b43.png" /></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>上述输出中，Suggested Profile(s) 显示了 Volatility 推荐的几个内存镜像分析配置文件，可以根据这些配置文件来选择合适的插件进行内存分析
 <a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>AS Layer2 显示了使用的内存镜像文件路径
 <a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>KDBG 显示了内存镜像中的 KDBG 结构地址
 <a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>Number of Processors 显示了处理器数量
 <a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>Image Type 显示了操作系统服务包版本
 <a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>Image date and time 显示了内存镜像文件的创建日期和时间
-</code></pre></div></p>
+</code></pre></div>
 <h2 id="_7">获取正在运行的程序<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<p>这里我们用Win7SP1x64配置文件进行分析，Volatility 的 pslist 插件可以遍历内存镜像中的进程列表，显示每个进程的进程 ID、名称、父进程 ID、创建时间、退出时间和路径等信息
+<p>这里我们用Win7SP1x64配置文件进行分析，Volatility 的 pslist 插件可以遍历内存镜像中的进程列表，显示每个进程的进程 ID、名称、父进程 ID、创建时间、退出时间和路径等信息</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 pslist
 </code></pre></div>
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/45abecfd68f44f519f29117157ed8202.png" /></p>
+<p><img alt="" src="../images/memory/45abecfd68f44f519f29117157ed8202.png" /></p>
 <h2 id="_8">提取正在运行的程序<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <p>Volatility 的 procdump 插件可以根据进程 ID 或进程名称提取进程的内存映像，并保存为一个单独的文件</p>
 <p>比如这里我要提取iexplore.exe这个程序</p>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/91b4b7d94a0941bb847d2ca1dd718e20.png" /></p>
+<p><img alt="" src="../images/memory/91b4b7d94a0941bb847d2ca1dd718e20.png" /></p>
 <p>他的进程pid号为2728</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 procdump -p 2728 -D ./
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 procdump -p 2728 -D ./
 <a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>p：pid进程号
 <a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>D：提取程序后保存的地址，./指的是当前shell正在运行的文件夹地址，输入pwd命令可以查看shell当前的地址，简单来说就是保存到当前文件夹
 </code></pre></div>
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/44983433c85949ea973d4a8847f83c80.png" /></p>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/7cc5cb6ea5894a01af7d2f43b43c4e12.png" /></p>
+<p><img alt="" src="../images/memory/44983433c85949ea973d4a8847f83c80.png" /></p>
+<p><img alt="" src="../images/memory/7cc5cb6ea5894a01af7d2f43b43c4e12.png" /></p>
 <p>成功导出，导出后文件名为executable.2728.exe</p>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/75235b0e2ab8468ba0d9bf89c226c2ec.png" /></p>
+<p><img alt="" src="../images/memory/75235b0e2ab8468ba0d9bf89c226c2ec.png" /></p>
 <h2 id="_9">查看在终端里执行过的命令<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <p>Volatility 的 cmdscan 插件可以扫描内存镜像中的进程对象，提取已执行的 cmd 命令，并将其显示在终端中</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 cmdscan
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 cmdscan
 </code></pre></div>
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/1a294e3353534d53acfbc4d681935203.png" /></p>
+<p><img alt="" src="../images/memory/1a294e3353534d53acfbc4d681935203.png" /></p>
 <p>他移动到了Documents目录下，echo了一次字符串，然后创建了一个名为hint.txt的文件</p>
 <h2 id="_10">查看进程在终端里运行的命令<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
-<p>Volatility中的cmdline插件可以用于提取进程执行的命令行参数和参数值
+<p>Volatility中的cmdline插件可以用于提取进程执行的命令行参数和参数值</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 cmdline
-</code></pre></div></p>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/63133cffd6c6438d8dac28a7fdec6a33.png" /></p>
+</code></pre></div>
+<p><img alt="" src="../images/memory/63133cffd6c6438d8dac28a7fdec6a33.png" /></p>
 <h2 id="_11">查找内存中的文件<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <p>Volatility 的 filescan插件可以在内存中搜索已经打开的文件句柄，从而获取文件名、路径、文件大小等信息</p>
 <p>我想找到hint.txt文件，可以使用以下命令</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 filescan | grep hint.txt
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 filescan | grep hint.txt
 </code></pre></div>
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/ae18212c27504c8886f86feb340466cc.png" /></p>
+<p><img alt="" src="../images/memory/ae18212c27504c8886f86feb340466cc.png" /></p>
 <p>grep是Linux下常用的命令之一，它用于在文件中查找指定的字符串，并将包含该字符串的行输出</p>
 <p>如果只使用filescan而不配合grep的话，Volatility就会输出系统上的全部文件，例如：</p>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/6d3fc9ae14074b72b91684b01cbd91a2.png" /></p>
+<p><img alt="" src="../images/memory/6d3fc9ae14074b72b91684b01cbd91a2.png" /></p>
 <h2 id="_12">提取内存中的文件<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
 <p>Volatility的dumpfiles插件可以用来提取系统内存中的文件</p>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/a780dec2b2984df5b323dee8912e744f.png" /></p>
+<p><img alt="" src="../images/memory/a780dec2b2984df5b323dee8912e744f.png" /></p>
 <p>这里我要提取hint.txt文件，hint.txt的内存位置为0x000000011fd0ca70，这两个由于位置都一样，随便提取哪个都行</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 dumpfiles -Q 0x000000011fd0ca70 -D ./
 <a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>Q：内存位置
 <a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>D：提取程序后保存的地址，./指的是当前shell正在运行的文件夹地址，输入pwd命令可以查看shell当前的地址，简单来说就是保存到当前文件夹
 </code></pre></div>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/535675245dd846e9a588e036ab6c4428.png" /></p>
+<p><img alt="" src="../images/memory/535675245dd846e9a588e036ab6c4428.png" /></p>
 <p>提取出来的文件名是包含内存地址的，更改一下后缀名即可运行</p>
 <h2 id="_13">查看浏览器历史记录<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
-<p>Volatility中的iehistory插件可以用于提取Internet Explorer浏览器历史记录
+<p>Volatility中的iehistory插件可以用于提取Internet Explorer浏览器历史记录</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 iehistory
-</code></pre></div></p>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/a232c42576c74dfca9c3879eddd1ba5b.png" /></p>
+</code></pre></div>
+<p><img alt="" src="../images/memory/a232c42576c74dfca9c3879eddd1ba5b.png" /></p>
 <h2 id="hash">提取用户密码hash值并爆破<a class="headerlink" href="#hash" title="Permanent link">&para;</a></h2>
-<p>Volatility中的Hashdump插件可以用于提取系统内存中的密码哈希值
+<p>Volatility中的Hashdump插件可以用于提取系统内存中的密码哈希值</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 hashdump
 </code></pre></div>
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/7936d30ef7bd47739846e8c717da9af5.png" /></p>
+<p><img alt="" src="../images/memory/7936d30ef7bd47739846e8c717da9af5.png" /></p>
 <p>这里提取了四个用户的密码hash值，我们将这些字符串复制一下，粘贴到本地本文里</p>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/a1de0d61b1c5411fb5307512a86d050d.png" /></p>
-<p>我们可以使用这个在线网站：
+<p><img alt="" src="../images/memory/a1de0d61b1c5411fb5307512a86d050d.png" /></p>
+<p>我们可以使用这个在线网站：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>https://crackstation.net/
-</code></pre></div></p>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/2f67c4a94399411c8ebae5afe0ed8cef.png" /></p>
+</code></pre></div>
+<p><img alt="" src="../images/memory/2f67c4a94399411c8ebae5afe0ed8cef.png" /></p>
 <p>将hash值粘贴上去</p>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/a2a920a2960b445d9bd1aed994ab0903.png" /></p>
+<p><img alt="" src="../images/memory/a2a920a2960b445d9bd1aed994ab0903.png" /></p>
 <p>就可以得到用户密码明文</p>
 <h2 id="mimikatz">使用mimikatz提取密码<a class="headerlink" href="#mimikatz" title="Permanent link">&para;</a></h2>
 <p>mimikatz是一个开源的用于从Windows操作系统中提取明文密码，哈希值以及其他安全凭据的工具</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 mimikatz
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 mimikatz
 </code></pre></div>
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/efc11fc02f9b4ef5990e72c614ce0e03.png" /></p>
+<p><img alt="" src="../images/memory/efc11fc02f9b4ef5990e72c614ce0e03.png" /></p>
 <p>成功提取到TroubleMaker用户的密码</p>
 <h2 id="_14">查看剪切板里的内容<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
 <p>Volatility中的clipboard插件可以用于从内存转储中提取剪贴板数据</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 clipboard
 </code></pre></div>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/29ae5ed5721449be99d7bd02a63b30e8.png" /></p>
+<p><img alt="" src="../images/memory/29ae5ed5721449be99d7bd02a63b30e8.png" /></p>
 <h2 id="_15">查看正在运行的服务<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
 <p>svcscan是Volatility中的一个插件，用于扫描进程中所有的服务</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>svcscan
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>svcscan
 </code></pre></div>
-<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/402e4071e224454ba767e7f648382c3b.png" /></p>
+<p><img alt="" src="../images/memory/402e4071e224454ba767e7f648382c3b.png" /></p>
 <p>执行了svcscan之后，每列代表服务的一些信息，包括服务名、PID、服务状态、服务类型、路径等等</p>
 <h2 id="_16">查看网络连接状态<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
 <p>Volatility中的netscan插件可以在内存转储中查找打开的网络连接和套接字，该命令将显示所有当前打开的网络连接和套接字。输出包括本地和远程地址、端口、进程ID和进程名称等信息</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 netscan
 </code></pre></div>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/902b4ff077424d839920315f41516242.png" /></p>
+<p><img alt="" src="../images/memory/902b4ff077424d839920315f41516242.png" /></p>
 <h2 id="_17">查看注册表信息<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
 <p>printkey是Volatility工具中用于查看注册表的插件之一。它可以帮助分析人员查看和解析注册表中的键值，并提供有关键值的详细信息，如名称、数据类型、大小和值等</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 printkey
 </code></pre></div>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/b78477c28c3d4013a6339b5c7440c90e.png" /></p>
+<p><img alt="" src="../images/memory/b78477c28c3d4013a6339b5c7440c90e.png" /></p>
 <p>然后使用hivelist插件来确定注册表的地址</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 hivelist
 </code></pre></div>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/dee0917b8cd04757b7574753e848d77b.png" /></p>
+<p><img alt="" src="../images/memory/dee0917b8cd04757b7574753e848d77b.png" /></p>
 <p>查看注册表software项</p>
 <p>hivedump是一个Volatility插件，用于从内存中提取Windows注册表的内容，这里我们选择第一个来演示</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 hivedump -o 0xfffff8a00127d010
 <a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>o：hivelist列出的Virtual值
 </code></pre></div>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/471fb2976a1e4fdcbb239c4d528dde9b.png" /></p>
-<p>根据名称查看具体子项的内容，这里以SAM\Domains\Account\Users\Names做演示，这个是Windows系统中存储本地用户账户信息的注册表路径，它包含了每个本地用户账户的名称和对应的SID信息
+<p><img alt="" src="../images/memory/471fb2976a1e4fdcbb239c4d528dde9b.png" /></p>
+<p>根据名称查看具体子项的内容，这里以SAM\Domains\Account\Users\Names做演示，这个是Windows系统中存储本地用户账户信息的注册表路径，它包含了每个本地用户账户的名称和对应的SID信息</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 printkey -K &quot;SAM\Domains\Account\Users\Names&quot;
-</code></pre></div></p>
-<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/abf787f806634700b013b8583bfaab5b.png" /></p>
-<p>如果要提取全部的注册表，可以用这个命令
+</code></pre></div>
+<p><img alt="" src="../images/memory/abf787f806634700b013b8583bfaab5b.png" /></p>
+<p>如果要提取全部的注册表，可以用这个命令</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>python2 vol.py -f Challenge.raw --profile=Win7SP1x64 dumpregistry -D ./
-</code></pre></div></p>
+</code></pre></div>
 <h2 id="_18">全部插件<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>amcache         查看AmCache应用程序痕迹信息
 <a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>apihooks        检测内核及进程的内存空间中的API hook

@@ -785,8 +785,8 @@
 <h1 id="_1">前言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>版权声明：</p>
-<p>​ 文档源于项目<a href="https://github.com/ProbiusOfficial/CTF-QuickStart">ProbiusOfficial/CTF-QuickStart: 针对0基础新手编写的CTF快速入门手册 (github.com)</a></p>
-<p>​ 原作者为 GaoNengwWw</p>
+<p>文档源于项目<a href="https://github.com/ProbiusOfficial/CTF-QuickStart">ProbiusOfficial/CTF-QuickStart: 针对0基础新手编写的CTF快速入门手册 (github.com)</a></p>
+<p>原作者为 GaoNengwWw</p>
 </blockquote>
 <p>流量分析与取证在misc中也是较为常见的题目，流量分析主要是根据元数据（不是通信内容本身）识别对手活动和通信模式，每条记录多达几兆字节的全部活动内容，可能只产生100字节的元数据，如端点（包括ip地址和域名）、端口、收发字节数、连接时长及起止时间，我们将这样一组元数据成为“网络流”（network flows）。</p>
 <h2 id="_2">常用工具<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -809,8 +809,7 @@
 <blockquote>
 <p>[A] 表示A是可选的</p>
 <p>\&lt;x> 表示x为必选</p>
-<p>and(&amp;&amp;), or(||), not(!) 表示与或非
-</p>
+<p>and(&amp;&amp;), or(||), not(!) 表示与或非</p>
 </blockquote>
 <h2 id="primitive">原语(Primitive)语法<a class="headerlink" href="#primitive" title="Permanent link">&para;</a></h2>
 <p><code>protocol[.attr1.attr2.attr3 ... .stringN] [Comparison operator] [Value]</code></p>
@@ -976,7 +975,7 @@
 <p>从第二点得知，我们会需要一个密钥。</p>
 <p>问题来了，密钥可能在哪？会不会解密出来的文件就是密钥，或者说是一个其他的文件但内部隐藏着密钥？</p>
 <p>带着这两个问题，我们打开pcap文件</p>
-<p><img alt="1688697976491.png" src="https://img1.imgtp.com/2023/07/07/vAvZupKq.png" /></p>
+<p><img alt="1688697976491.png" src="./images/pcap/vAvZupKq.png" /></p>
 <p>可以看到右下角一共10183个分组，慢慢看恐怕是要看到天荒地老了。我们不妨筛选一下，但问题在于我们如何筛选？</p>
 <p>不妨先统计一下，都有哪些协议?占比有多少?从而进一步的分析。点击<code>统计 -&gt; 协议分级</code></p>
 <p><img alt="1688698095900.png" src="https://img1.imgtp.com/2023/07/07/XNANdGK4.png" /></p>
