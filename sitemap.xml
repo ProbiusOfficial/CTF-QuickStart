@@ -31,6 +31,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://www.xxx.com/ctf_misc/</loc>
+         <lastmod>2023-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://www.xxx.com/ctf_misc/memory/</loc>
          <lastmod>2023-07-12</lastmod>
          <changefreq>daily</changefreq>
