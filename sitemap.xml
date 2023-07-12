@@ -2,57 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.xxx.com/</loc>
-         <lastmod>2023-07-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.xxx.com/NSSCTF%E5%B9%B3%E5%8F%B0%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
-         <lastmod>2023-07-11</lastmod>
+         <lastmod>2023-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/appendix/CTFevent/</loc>
-         <lastmod>2023-07-11</lastmod>
+         <lastmod>2023-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.xxx.com/appendix/NSSCTF_Usage/</loc>
+         <lastmod>2023-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/appendix/how-to-ask/</loc>
-         <lastmod>2023-07-11</lastmod>
+         <lastmod>2023-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_evnset/</loc>
-         <lastmod>2023-07-11</lastmod>
+         <lastmod>2023-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_evnset/CTFtool/</loc>
-         <lastmod>2023-07-11</lastmod>
+         <lastmod>2023-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_preface/</loc>
-         <lastmod>2023-07-11</lastmod>
+         <lastmod>2023-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.xxx.com/ctf_preface/Q%26A/</loc>
+         <lastmod>2023-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_preface/about/</loc>
-         <lastmod>2023-07-11</lastmod>
+         <lastmod>2023-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_preface/usage/</loc>
-         <lastmod>2023-07-11</lastmod>
+         <lastmod>2023-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_start/</loc>
-         <lastmod>2023-07-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.xxx.com/ctf_start/NSSCTF%E5%B9%B3%E5%8F%B0%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
-         <lastmod>2023-07-11</lastmod>
+         <lastmod>2023-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
