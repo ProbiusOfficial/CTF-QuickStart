@@ -2,97 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.xxx.com/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/appendix/CTFevent/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/appendix/NSSCTF_Usage/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/appendix/how-to-ask/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_evnset/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_evnset/CTFtool/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.xxx.com/ctf_evnset/Crypto/</loc>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_misc/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_misc/memory/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_misc/pcap/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_misc/stego/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_preface/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_preface/Q%26A/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_preface/about/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_preface/usage/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_start/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_web/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_web/php_unserialize/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_web/sql_injection/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.xxx.com/ctf_web/xss/</loc>
-         <lastmod>2023-07-12</lastmod>
+         <lastmod>2023-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

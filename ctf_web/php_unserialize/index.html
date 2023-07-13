@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#php" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -477,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ctf_evnset/Crypto.md" class="md-nav__link">
+      <a href="../../ctf_evnset/Crypto/" class="md-nav__link">
         2.3. &nbsp; Crypto环境设置
       </a>
     </li>
@@ -731,57 +731,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#php" class="md-nav__link">
-    PHP序列化与反序列化入门
-  </a>
-  
-    <nav class="md-nav" aria-label="PHP序列化与反序列化入门">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     介绍
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     数组的反序列化
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     普通对象的反序列化
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     自定义类的反序列化
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     其他标识
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     魔术方法
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -912,57 +899,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#php" class="md-nav__link">
-    PHP序列化与反序列化入门
-  </a>
-  
-    <nav class="md-nav" aria-label="PHP序列化与反序列化入门">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     介绍
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     数组的反序列化
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     普通对象的反序列化
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     自定义类的反序列化
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     其他标识
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     魔术方法
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -991,13 +965,11 @@
 
   <h1>4.3. &nbsp; PHP反序列化</h1>
 
-<h2 id="php">PHP序列化与反序列化入门<a class="headerlink" href="#php" title="Permanent link">&para;</a></h2>
-<p>小广告，欢迎关注 Github开源项目 <a href="https://github.com/Jlan45/AnswerPHP">AnswerPHP</a>。</p>
 <h3 id="_1">介绍<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<p>标题有说道，这两种数据处理方式， 序列化 和 反序列化。</p>
+<p>标题有说道，这两种数据处理方式， 序列化 和 反序列化。  </p>
 <ul>
-<li>**序列化**是将 PHP 对象转换为字符串的过程，可以使用 <code>serialize()</code> 函数来实现。该函数将对象的状态以及它的类名和属性值编码为一个字符串。序列化后的字符串可以存储在文件中，存储在数据库中，或者通过网络传输到其他地方。</li>
-<li>**反序列化**是将序列化后的字符串转换回 PHP 对象的过程，可以使用 <code>unserialize()</code> 函数来实现。该函数会将序列化的字符串解码，并将其转换回原始的 PHP 对象。</li>
+<li><strong>序列化</strong> 是将 PHP 对象转换为字符串的过程，可以使用 <code>serialize()</code> 函数来实现。该函数将对象的状态以及它的类名和属性值编码为一个字符串。序列化后的字符串可以存储在文件中，存储在数据库中，或者通过网络传输到其他地方。</li>
+<li><strong>反序列化</strong> 是将序列化后的字符串转换回 PHP 对象的过程，可以使用 <code>unserialize()</code> 函数来实现。该函数会将序列化的字符串解码，并将其转换回原始的 PHP 对象。</li>
 <li>序列化的目的是方便数据的存储，在PHP中，他们常被用到缓存、session、cookie等地方。</li>
 </ul>
 <p>下面我们从数组的反序列化开始 一步一步讲解。</p>
@@ -1062,140 +1034,126 @@
 <p>其实拆分开来没那么难理解。</p>
 <p>然后我们针对上面的代码，添加点类中的其他属性，如：<code>保护变量</code> <code>私有变量</code> <code>自定义函数</code></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="cp">&lt;?php</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">class</span> <span class="nc">User</span> <span class="p">{</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="k">public</span> <span class="nv">$name</span><span class="p">;</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="k">protected</span> <span class="nv">$email</span><span class="p">;</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    <span class="k">private</span> <span class="nv">$phoneNumber</span><span class="p">;</span>
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nv">$name</span><span class="p">,</span> <span class="nv">$email</span><span class="p">,</span><span class="nv">$phoneNumber</span><span class="p">)</span> <span class="p">{</span>
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
-<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span> <span class="o">=</span> <span class="nv">$email</span><span class="p">;</span>
-<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>        <span class="nv">$this</span> <span class="o">-&gt;</span><span class="na">phoneNumber</span> <span class="o">=</span> <span class="nv">$phoneNumber</span><span class="p">;</span>
-<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    <span class="p">}</span>
-<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
-<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">getPhoneNumber</span><span class="p">(){</span>
-<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>        <span class="k">echo</span> <span class="nv">$this</span> <span class="o">-&gt;</span><span class="na">phoneNumber</span><span class="p">;</span>
-<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>    <span class="p">}</span>
-<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="p">}</span>
-<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="nv">$user</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">User</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s2">&quot;tan&quot;</span><span class="p">,</span><span class="s2">&quot;ji&quot;</span><span class="p">),</span> <span class="s1">&#39;admin@probius.xyz&#39;</span><span class="p">,</span><span class="s1">&#39;19191145148&#39;</span><span class="p">);</span>
-<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>
-<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="nv">$serializedData</span> <span class="o">=</span> <span class="nb">serialize</span><span class="p">(</span><span class="nv">$user</span><span class="p">);</span>
-<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>
-<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="k">echo</span> <span class="nv">$serializedData</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
-<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>
-<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="nv">$deserializedUser</span> <span class="o">=</span> <span class="nb">unserialize</span><span class="p">(</span><span class="nv">$serializedData</span><span class="p">);</span>
-<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>
-<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a><span class="nb">print_r</span><span class="p">(</span><span class="nv">$deserializedUser</span> <span class="o">-&gt;</span> <span class="na">name</span><span class="p">);</span>
-<a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a>
-<a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a><span class="k">echo</span> <span class="nv">$deserializedUser</span> <span class="o">-&gt;</span> <span class="na">getPhoneNumber</span><span class="p">();</span>
-<a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a>
-<a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a><span class="cp">?&gt;</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">class</span> <span class="nc">User</span> <span class="p">{</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="k">public</span> <span class="nv">$name</span><span class="p">;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="k">protected</span> <span class="nv">$email</span><span class="p">;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="k">private</span> <span class="nv">$phoneNumber</span><span class="p">;</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nv">$name</span><span class="p">,</span> <span class="nv">$email</span><span class="p">,</span><span class="nv">$phoneNumber</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span> <span class="o">=</span> <span class="nv">$email</span><span class="p">;</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>        <span class="nv">$this</span> <span class="o">-&gt;</span><span class="na">phoneNumber</span> <span class="o">=</span> <span class="nv">$phoneNumber</span><span class="p">;</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    <span class="p">}</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">getPhoneNumber</span><span class="p">(){</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>        <span class="k">echo</span> <span class="nv">$this</span> <span class="o">-&gt;</span><span class="na">phoneNumber</span><span class="p">;</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>    <span class="p">}</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="p">}</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="nv">$user</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">User</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s2">&quot;tan&quot;</span><span class="p">,</span><span class="s2">&quot;ji&quot;</span><span class="p">),</span> <span class="s1">&#39;admin@probius.xyz&#39;</span><span class="p">,</span><span class="s1">&#39;19191145148&#39;</span><span class="p">);</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="nv">$serializedData</span> <span class="o">=</span> <span class="nb">serialize</span><span class="p">(</span><span class="nv">$user</span><span class="p">);</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="k">echo</span> <span class="nv">$serializedData</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="nv">$deserializedUser</span> <span class="o">=</span> <span class="nb">unserialize</span><span class="p">(</span><span class="nv">$serializedData</span><span class="p">);</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="nb">print_r</span><span class="p">(</span><span class="nv">$deserializedUser</span> <span class="o">-&gt;</span> <span class="na">name</span><span class="p">);</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="k">echo</span> <span class="nv">$deserializedUser</span> <span class="o">-&gt;</span> <span class="na">getPhoneNumber</span><span class="p">();</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="cp">?&gt;</span>
 </code></pre></div>
-<p>其输出为：</p>
-<p>```Serialized Data
-O:4:"User":3:{s:4:"name";a:2:{i:0;s:3:"tan";i:1;s:2:"ji";}s:8:" * email";s:17:"admin@probius.xyz";s:17:" User phoneNumber";s:11:"19191145148";}
-Array
-(
-    [0] =&gt; tan
-    [1] =&gt; ji
-)
-19191145148
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>为了方便理解，我们这样拆分一下：
+<p>其输出为：  </p>
+<div class="highlight"><span class="filename">Serialized Data</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="x">O:4:&quot;User&quot;:3:{s:4:&quot;name&quot;;a:2:{i:0;s:3:&quot;tan&quot;;i:1;s:2:&quot;ji&quot;;}s:8:&quot; * email&quot;;s:17:&quot;admin@probius.xyz&quot;;s:17:&quot; User phoneNumber&quot;;s:11:&quot;19191145148&quot;;}</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="x">Array</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="x">(</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="x">    [0] =&gt; tan</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="x">    [1] =&gt; ji</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="x">)</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="x">19191145148</span>
 </code></pre></div>
-O:4:"User":3:{s:4:"name";a:2:{i:0;s:3:"tan";i:1;s:2:"ji";}---- public $name;</p>
-<p>s:8:" * email";s:17:"admin@probius.xyz";---------------------- protected $email;</p>
-<p>s:17:" User phoneNumber";s:11:"19191145148";}----------------- private $phoneNumber;
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>观察不同类型变量名的字符长度标识，你会发现长度和你看到的好像有些不一样，那是因为在 `protected` 和 `private`类型的变量中都加入了不可见字符：
+<p>为了方便理解，我们这样拆分一下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>O:4:&quot;User&quot;:3:{s:4:&quot;name&quot;;a:2:{i:0;s:3:&quot;tan&quot;;i:1;s:2:&quot;ji&quot;;}---- public $name;
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>如果是 `protected` 变量，则会在变量名前加上`\x00*\x00`
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>s:8:&quot; * email&quot;;s:17:&quot;admin@probius.xyz&quot;;---------------------- protected $email;
 <a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>如果是 `private` 变量，则会在变量名前加上`\x00类名`
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>或许下面控制台的输出比起上面不可见字符变成了类似&quot;` `&quot;空格的字符更直观（虽然也直观不到哪里去。
-<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>
-<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>![image-20230511223914122](https://nssctf.wdf.ink//img/WDTJ/202305112239183.png)
-<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
-<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>所以一般我们在输出的时候都会先编码后输出，以免遇到保护和私有类序列化后不可见字符丢失的问题。
-<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>
-<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>```php
-<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>O:4:&quot;User&quot;:3:{s:4:&quot;name&quot;;a:2:{i:0;s:3:&quot;tan&quot;;i:1;s:2:&quot;ji&quot;;}---------- public $name;
-<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>
-<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>s:8:&quot;\x00*\x00email&quot;;s:17:&quot;admin@probius.xyz&quot;;---------------------- protected $email;
-<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>
-<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>s:17:&quot;\x00User\x00phoneNumber&quot;;s:11:&quot;19191145148&quot;;}----------------- private $phoneNumber;
-</code></pre></div></p>
-<p><code>echo  urlencode($serializedData)</code> :</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="x"> O%3A4%3A%22User%22%3A3%3A%7Bs%3A4%3A%22name%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A3%3A%22tan%22%3Bi%3A1%3Bs%3A2%3A%22ji%22%3B%7D-------------------------------------------------------------- public $name;</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>s:17:&quot; User phoneNumber&quot;;s:11:&quot;19191145148&quot;;}----------------- private $phoneNumber;
+</code></pre></div>
+<p>观察不同类型变量名的字符长度标识，你会发现长度和你看到的好像有些不一样，那是因为在 <code>protected</code> 和 <code>private</code>类型的变量中都加入了不可见字符：</p>
+<p>如果是 <code>protected</code> 变量，则会在变量名前加上<code>\x00*\x00</code></p>
+<p>如果是 <code>private</code> 变量，则会在变量名前加上<code>\x00类名</code></p>
+<p>或许下面控制台的输出比起上面不可见字符变成了类似"<code></code>"空格的字符更直观（虽然也直观不到哪里去。</p>
+<p><img alt="image-20230511223914122" src="https://nssctf.wdf.ink//img/WDTJ/202305112239183.png" /></p>
+<p>所以一般我们在输出的时候都会先编码后输出，以免遇到保护和私有类序列化后不可见字符丢失的问题。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="x">O:4:&quot;User&quot;:3:{s:4:&quot;name&quot;;a:2:{i:0;s:3:&quot;tan&quot;;i:1;s:2:&quot;ji&quot;;}---------- public $name;</span>
 <a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="x"> s%3A8%3A%22%00%2A%00email%22%3Bs%3A17%3A%22admin%40probius.xyz%22%3B------- protected $email;</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="x">s:8:&quot;\x00*\x00email&quot;;s:17:&quot;admin@probius.xyz&quot;;---------------------- protected $email;</span>
 <a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="x"> s%3A17%3A%22%00User%00phoneNumber%22%3Bs%3A11%3A%2219191145148%22%3B%7D---- private $phoneNumber;</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="x">s:17:&quot;\x00User\x00phoneNumber&quot;;s:11:&quot;19191145148&quot;;}----------------- private $phoneNumber;</span>
+</code></pre></div>
+<p><code>echo  urlencode($serializedData)</code> :</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="x"> O%3A4%3A%22User%22%3A3%3A%7Bs%3A4%3A%22name%22%3Ba%3A2%3A%7Bi%3A0%3Bs%3A3%3A%22tan%22%3Bi%3A1%3Bs%3A2%3A%22ji%22%3B%7D-------------------------------------------------------------- public $name;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="x"> s%3A8%3A%22%00%2A%00email%22%3Bs%3A17%3A%22admin%40probius.xyz%22%3B------- protected $email;</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="x"> s%3A17%3A%22%00User%00phoneNumber%22%3Bs%3A11%3A%2219191145148%22%3B%7D---- private $phoneNumber;</span>
 </code></pre></div>
 <h3 id="_4"><strong>自定义类的反序列化</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>如果我们把上面的类改成这样：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="cp">&lt;?php</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">class</span> <span class="nc">User</span> <span class="k">implements</span> <span class="nx">Serializable</span> <span class="p">{</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="k">public</span> <span class="nv">$name</span><span class="p">;</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    <span class="k">protected</span> <span class="nv">$email</span><span class="p">;</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    <span class="k">private</span> <span class="nv">$phoneNumber</span><span class="p">;</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
-<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nv">$name</span><span class="p">,</span> <span class="nv">$email</span><span class="p">,</span> <span class="nv">$phoneNumber</span><span class="p">)</span> <span class="p">{</span>
-<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
-<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span> <span class="o">=</span> <span class="nv">$email</span><span class="p">;</span>
-<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">phoneNumber</span> <span class="o">=</span> <span class="nv">$phoneNumber</span><span class="p">;</span>
-<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>    <span class="p">}</span>
-<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>
-<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">serialize</span><span class="p">()</span> <span class="p">{</span>
-<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>        <span class="k">return</span> <span class="nb">serialize</span><span class="p">([</span>
-<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>            <span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">,</span>
-<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>            <span class="s1">&#39;email&#39;</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="p">,</span>
-<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>            <span class="s1">&#39;phoneNumber&#39;</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">phoneNumber</span><span class="p">,</span>
-<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>        <span class="p">]);</span>
-<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>    <span class="p">}</span>
-<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>
-<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">unserialize</span><span class="p">(</span><span class="nv">$serialized</span><span class="p">)</span> <span class="p">{</span>
-<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a>        <span class="nv">$data</span> <span class="o">=</span> <span class="nb">unserialize</span><span class="p">(</span><span class="nv">$serialized</span><span class="p">);</span>
-<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">];</span>
-<a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">];</span>
-<a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">phoneNumber</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;phoneNumber&#39;</span><span class="p">];</span>
-<a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a>    <span class="p">}</span>
-<a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a>
-<a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">getPhoneNumber</span><span class="p">()</span> <span class="p">{</span>
-<a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a>        <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">phoneNumber</span><span class="p">;</span>
-<a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a>    <span class="p">}</span>
-<a id="__codelineno-12-31" name="__codelineno-12-31" href="#__codelineno-12-31"></a>
-<a id="__codelineno-12-32" name="__codelineno-12-32" href="#__codelineno-12-32"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">getEmail</span><span class="p">()</span> <span class="p">{</span>
-<a id="__codelineno-12-33" name="__codelineno-12-33" href="#__codelineno-12-33"></a>        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="p">;</span>
-<a id="__codelineno-12-34" name="__codelineno-12-34" href="#__codelineno-12-34"></a>    <span class="p">}</span>
-<a id="__codelineno-12-35" name="__codelineno-12-35" href="#__codelineno-12-35"></a><span class="p">}</span>
-<a id="__codelineno-12-36" name="__codelineno-12-36" href="#__codelineno-12-36"></a>
-<a id="__codelineno-12-37" name="__codelineno-12-37" href="#__codelineno-12-37"></a><span class="nv">$user</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">User</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s2">&quot;tan&quot;</span><span class="p">,</span><span class="s2">&quot;ji&quot;</span><span class="p">),</span> <span class="s1">&#39;admin@probius.xyz&#39;</span><span class="p">,</span> <span class="s1">&#39;19191145148&#39;</span><span class="p">);</span>
-<a id="__codelineno-12-38" name="__codelineno-12-38" href="#__codelineno-12-38"></a>
-<a id="__codelineno-12-39" name="__codelineno-12-39" href="#__codelineno-12-39"></a><span class="nv">$serializedData</span> <span class="o">=</span> <span class="nb">serialize</span><span class="p">(</span><span class="nv">$user</span><span class="p">);</span>
-<a id="__codelineno-12-40" name="__codelineno-12-40" href="#__codelineno-12-40"></a>
-<a id="__codelineno-12-41" name="__codelineno-12-41" href="#__codelineno-12-41"></a><span class="k">echo</span> <span class="nv">$serializedData</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
-<a id="__codelineno-12-42" name="__codelineno-12-42" href="#__codelineno-12-42"></a>
-<a id="__codelineno-12-43" name="__codelineno-12-43" href="#__codelineno-12-43"></a><span class="nv">$deserializedUser</span> <span class="o">=</span> <span class="nb">unserialize</span><span class="p">(</span><span class="nv">$serializedData</span><span class="p">);</span>
-<a id="__codelineno-12-44" name="__codelineno-12-44" href="#__codelineno-12-44"></a>
-<a id="__codelineno-12-45" name="__codelineno-12-45" href="#__codelineno-12-45"></a><span class="nb">print_r</span><span class="p">(</span><span class="nv">$deserializedUser</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">);</span>
-<a id="__codelineno-12-46" name="__codelineno-12-46" href="#__codelineno-12-46"></a>
-<a id="__codelineno-12-47" name="__codelineno-12-47" href="#__codelineno-12-47"></a><span class="k">echo</span> <span class="nv">$deserializedUser</span><span class="o">-&gt;</span><span class="na">getPhoneNumber</span><span class="p">()</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
-<a id="__codelineno-12-48" name="__codelineno-12-48" href="#__codelineno-12-48"></a>
-<a id="__codelineno-12-49" name="__codelineno-12-49" href="#__codelineno-12-49"></a><span class="k">echo</span> <span class="nv">$deserializedUser</span><span class="o">-&gt;</span><span class="na">getemail</span><span class="p">()</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">class</span> <span class="nc">User</span> <span class="k">implements</span> <span class="nx">Serializable</span> <span class="p">{</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="k">public</span> <span class="nv">$name</span><span class="p">;</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    <span class="k">protected</span> <span class="nv">$email</span><span class="p">;</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="k">private</span> <span class="nv">$phoneNumber</span><span class="p">;</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nv">$name</span><span class="p">,</span> <span class="nv">$email</span><span class="p">,</span> <span class="nv">$phoneNumber</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span> <span class="o">=</span> <span class="nv">$email</span><span class="p">;</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">phoneNumber</span> <span class="o">=</span> <span class="nv">$phoneNumber</span><span class="p">;</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>    <span class="p">}</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">serialize</span><span class="p">()</span> <span class="p">{</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>        <span class="k">return</span> <span class="nb">serialize</span><span class="p">([</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>            <span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">,</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>            <span class="s1">&#39;email&#39;</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="p">,</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>            <span class="s1">&#39;phoneNumber&#39;</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">phoneNumber</span><span class="p">,</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>        <span class="p">]);</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>    <span class="p">}</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">unserialize</span><span class="p">(</span><span class="nv">$serialized</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>        <span class="nv">$data</span> <span class="o">=</span> <span class="nb">unserialize</span><span class="p">(</span><span class="nv">$serialized</span><span class="p">);</span>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">];</span>
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">];</span>
+<a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">phoneNumber</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">&#39;phoneNumber&#39;</span><span class="p">];</span>
+<a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a>    <span class="p">}</span>
+<a id="__codelineno-13-27" name="__codelineno-13-27" href="#__codelineno-13-27"></a>
+<a id="__codelineno-13-28" name="__codelineno-13-28" href="#__codelineno-13-28"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">getPhoneNumber</span><span class="p">()</span> <span class="p">{</span>
+<a id="__codelineno-13-29" name="__codelineno-13-29" href="#__codelineno-13-29"></a>        <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">phoneNumber</span><span class="p">;</span>
+<a id="__codelineno-13-30" name="__codelineno-13-30" href="#__codelineno-13-30"></a>    <span class="p">}</span>
+<a id="__codelineno-13-31" name="__codelineno-13-31" href="#__codelineno-13-31"></a>
+<a id="__codelineno-13-32" name="__codelineno-13-32" href="#__codelineno-13-32"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">getEmail</span><span class="p">()</span> <span class="p">{</span>
+<a id="__codelineno-13-33" name="__codelineno-13-33" href="#__codelineno-13-33"></a>        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">email</span><span class="p">;</span>
+<a id="__codelineno-13-34" name="__codelineno-13-34" href="#__codelineno-13-34"></a>    <span class="p">}</span>
+<a id="__codelineno-13-35" name="__codelineno-13-35" href="#__codelineno-13-35"></a><span class="p">}</span>
+<a id="__codelineno-13-36" name="__codelineno-13-36" href="#__codelineno-13-36"></a>
+<a id="__codelineno-13-37" name="__codelineno-13-37" href="#__codelineno-13-37"></a><span class="nv">$user</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">User</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s2">&quot;tan&quot;</span><span class="p">,</span><span class="s2">&quot;ji&quot;</span><span class="p">),</span> <span class="s1">&#39;admin@probius.xyz&#39;</span><span class="p">,</span> <span class="s1">&#39;19191145148&#39;</span><span class="p">);</span>
+<a id="__codelineno-13-38" name="__codelineno-13-38" href="#__codelineno-13-38"></a>
+<a id="__codelineno-13-39" name="__codelineno-13-39" href="#__codelineno-13-39"></a><span class="nv">$serializedData</span> <span class="o">=</span> <span class="nb">serialize</span><span class="p">(</span><span class="nv">$user</span><span class="p">);</span>
+<a id="__codelineno-13-40" name="__codelineno-13-40" href="#__codelineno-13-40"></a>
+<a id="__codelineno-13-41" name="__codelineno-13-41" href="#__codelineno-13-41"></a><span class="k">echo</span> <span class="nv">$serializedData</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+<a id="__codelineno-13-42" name="__codelineno-13-42" href="#__codelineno-13-42"></a>
+<a id="__codelineno-13-43" name="__codelineno-13-43" href="#__codelineno-13-43"></a><span class="nv">$deserializedUser</span> <span class="o">=</span> <span class="nb">unserialize</span><span class="p">(</span><span class="nv">$serializedData</span><span class="p">);</span>
+<a id="__codelineno-13-44" name="__codelineno-13-44" href="#__codelineno-13-44"></a>
+<a id="__codelineno-13-45" name="__codelineno-13-45" href="#__codelineno-13-45"></a><span class="nb">print_r</span><span class="p">(</span><span class="nv">$deserializedUser</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">);</span>
+<a id="__codelineno-13-46" name="__codelineno-13-46" href="#__codelineno-13-46"></a>
+<a id="__codelineno-13-47" name="__codelineno-13-47" href="#__codelineno-13-47"></a><span class="k">echo</span> <span class="nv">$deserializedUser</span><span class="o">-&gt;</span><span class="na">getPhoneNumber</span><span class="p">()</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+<a id="__codelineno-13-48" name="__codelineno-13-48" href="#__codelineno-13-48"></a>
+<a id="__codelineno-13-49" name="__codelineno-13-49" href="#__codelineno-13-49"></a><span class="k">echo</span> <span class="nv">$deserializedUser</span><span class="o">-&gt;</span><span class="na">getemail</span><span class="p">()</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
 </code></pre></div>
 <p>在User类中，通过 <code>class User implements Serializable</code> 中的 <code>Serializable</code> 接口，我们可以定义<code>serialize()</code> 和 <code>unserialize()</code> 两个方法，实现控制类实例在序列化和反序列化过程中的行为。</p>
 <p>这两个方法分别负责将类实例的属性序列化为字符串和从字符串中还原属性。</p>
 <p>当我们使用全局的 <code>serialize()</code> 和 <code>unserialize()</code> 函数时，这些方法会自动调用，从而让我们更好地控制序列化和反序列化过程。这也是该类型的类叫做 "CustomObject"的原因。</p>
 <p>当我们运行上面的程序时，控制台输出如下：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="x">C:4:&quot;User&quot;:125:{a:3:{s:4:&quot;name&quot;;a:2:{i:0;s:3:&quot;tan&quot;;i:1;s:2:&quot;ji&quot;;}s:5:&quot;email&quot;;s:17:&quot;admin@probius.xyz&quot;;s:11:&quot;phoneNumber&quot;;s:11:&quot;19191145148&quot;;}} ---------------------------------------------------- echo $serializedData . &quot;\n&quot;;</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="x">Array ------------------------------------------------ print_r($deserializedUser-&gt;name);</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="x">(</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="x">    [0] =&gt; tan</span>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="x">    [1] =&gt; ji</span>
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="x">)</span>
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="x">19191145148 ------------------------------------------ echo $deserializedUser-&gt;getPhoneNumber() . &quot;\n&quot;;</span>
-<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="x">admin@probius.xyz ------------------------------------ echo $deserializedUser-&gt;getemail() . &quot;\n&quot;;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="x">C:4:&quot;User&quot;:125:{a:3:{s:4:&quot;name&quot;;a:2:{i:0;s:3:&quot;tan&quot;;i:1;s:2:&quot;ji&quot;;}s:5:&quot;email&quot;;s:17:&quot;admin@probius.xyz&quot;;s:11:&quot;phoneNumber&quot;;s:11:&quot;19191145148&quot;;}} ---------------------------------------------------- echo $serializedData . &quot;\n&quot;;</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="x">Array ------------------------------------------------ print_r($deserializedUser-&gt;name);</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="x">(</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="x">    [0] =&gt; tan</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="x">    [1] =&gt; ji</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="x">)</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="x">19191145148 ------------------------------------------ echo $deserializedUser-&gt;getPhoneNumber() . &quot;\n&quot;;</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="x">admin@probius.xyz ------------------------------------ echo $deserializedUser-&gt;getemail() . &quot;\n&quot;;</span>
 </code></pre></div>
 <p>其格式大致为：<code>C:&lt;className length&gt;:"&lt;class name&gt;":&lt;data length&gt;:{&lt;data&gt;}</code></p>
 <p>为了方便理解，我们这样同样拆分一下：</p>
@@ -1205,13 +1163,13 @@ O:4:"User":3:{s:4:"name";a:2:{i:0;s:3:"tan";i:1;s:2:"ji";}---- public $name;</p>
 <ul>
 <li>
 <p>a:array 数组
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="x">echo serialize(array(1,2)); --- a:2:{i:0;i:1;i:1;i:2;}</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="x">echo serialize(array(1,2)); --- a:2:{i:0;i:1;i:1;i:2;}</span>
 </code></pre></div></p>
 </li>
 <li>
 <p>b:boolean bool值
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="x">echo serialize(true);  ---- b:1;</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="x">echo serialize(false); ---- b:0;</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="x">echo serialize(true);  ---- b:1;</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="x">echo serialize(false); ---- b:0;</span>
 </code></pre></div></p>
 </li>
 <li>
@@ -1219,49 +1177,49 @@ O:4:"User":3:{s:4:"name";a:2:{i:0;s:3:"tan";i:1;s:2:"ji";}---- public $name;</p>
 </li>
 </ul>
 <p>使用 Serializable 接口定义了序列化和反序列化方法的类
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="x">class yourClassName implements Serializable</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="x">class yourClassName implements Serializable</span>
 </code></pre></div></p>
 <ul>
 <li>
 <p>d:double 小数
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="x">echo serialize(1.1); ---- d:1.1;</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="x">echo serialize(1.1); ---- d:1.1;</span>
 </code></pre></div></p>
 </li>
 <li>
 <p>i:integer 整数
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="x">echo serialize(114); ---- i:114;</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="x">echo serialize(114); ---- i:114;</span>
 </code></pre></div></p>
 </li>
 <li>
 <p>o:commonObject 对象
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>似乎在php4的时候就弃用了
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>似乎在php4的时候就弃用了
 </code></pre></div></p>
 </li>
 <li>
 <p>O:Object 对象
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="x">class a{}</span>
-<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="x">echo serialize(new a());</span>
-<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="x">------ O:1:&quot;a&quot;:0:{}</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="x">class a{}</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="x">echo serialize(new a());</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="x">------ O:1:&quot;a&quot;:0:{}</span>
 </code></pre></div></p>
 </li>
 <li>
 <p>r:reference 对象引用 &amp;&amp; R:pointer reference 指针引用
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="cp">&lt;?php</span>
-<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">class</span> <span class="nc">A</span><span class="p">{</span>
-<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
-<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="p">}</span>
-<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="k">class</span> <span class="nc">B</span><span class="p">{</span>
-<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>    <span class="k">public</span> <span class="nv">$ClassA</span><span class="p">;</span>
-<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>    <span class="k">public</span> <span class="nv">$refer</span><span class="p">;</span>
-<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>    <span class="k">public</span> <span class="nv">$pointer</span><span class="p">;</span>
-<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(){</span>
-<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">ClassA</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">A</span><span class="p">();</span>
-<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">refer</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">ClassA</span><span class="p">;</span>
-<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">pointer</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">ClassA</span><span class="p">;</span>
-<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>    <span class="p">}</span>
-<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a><span class="p">}</span>
-<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a><span class="nv">$a</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">B</span><span class="p">();</span>
-<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a><span class="k">echo</span> <span class="nb">serialize</span><span class="p">(</span><span class="nv">$a</span><span class="p">);</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="k">class</span> <span class="nc">A</span><span class="p">{</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="p">}</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="k">class</span> <span class="nc">B</span><span class="p">{</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>    <span class="k">public</span> <span class="nv">$ClassA</span><span class="p">;</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>    <span class="k">public</span> <span class="nv">$refer</span><span class="p">;</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>    <span class="k">public</span> <span class="nv">$pointer</span><span class="p">;</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(){</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">ClassA</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">A</span><span class="p">();</span>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">refer</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">ClassA</span><span class="p">;</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">pointer</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">ClassA</span><span class="p">;</span>
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>    <span class="p">}</span>
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a><span class="p">}</span>
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a><span class="nv">$a</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">B</span><span class="p">();</span>
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a><span class="k">echo</span> <span class="nb">serialize</span><span class="p">(</span><span class="nv">$a</span><span class="p">);</span>
 </code></pre></div></p>
 </li>
 </ul>
@@ -1277,52 +1235,52 @@ O:1:&quot;B&quot;:3:
 </code></pre></div>
 <p><img alt="image-20230512173231633" src="https://nssctf.wdf.ink//img/WDTJ/202305121732731.png" /></p>
 <p>此外，引用对象的属性值取决于声明顺序。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>&lt;?php
-<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>class A{
-<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
-<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>}
-<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>class C{
-<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>
-<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>}
-<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>class B{
-<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>    public $ClassA;
-<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>    public $ClassC;
-<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>    public $pointer_1;
-<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>    public $pointer_2;
-<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>
-<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>    public $refer;
-<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a>
-<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a>    public function __construct(){
-<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a>        $this-&gt;ClassA = new A();
-<a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a>        $this-&gt;ClassC = new C();
-<a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a>        $this-&gt;refer = $this-&gt;ClassA;
-<a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a>        $this-&gt;pointer_1 = &amp;$this-&gt;ClassA;
-<a id="__codelineno-23-21" name="__codelineno-23-21" href="#__codelineno-23-21"></a>        $this-&gt;pointer_2 = &amp;$this-&gt;ClassC;
-<a id="__codelineno-23-22" name="__codelineno-23-22" href="#__codelineno-23-22"></a>
-<a id="__codelineno-23-23" name="__codelineno-23-23" href="#__codelineno-23-23"></a>    }
-<a id="__codelineno-23-24" name="__codelineno-23-24" href="#__codelineno-23-24"></a>}
-<a id="__codelineno-23-25" name="__codelineno-23-25" href="#__codelineno-23-25"></a>$a = new B();
-<a id="__codelineno-23-26" name="__codelineno-23-26" href="#__codelineno-23-26"></a>echo serialize($a);
-<a id="__codelineno-23-27" name="__codelineno-23-27" href="#__codelineno-23-27"></a>// ----------------------- 当改变ClassA / C 的声明顺序的时候输出如下:
-<a id="__codelineno-23-28" name="__codelineno-23-28" href="#__codelineno-23-28"></a>// O:1:&quot;B&quot;:5:{s:6:&quot;ClassC&quot;;O:1:&quot;C&quot;:0:{}s:6:&quot;ClassA&quot;;O:1:&quot;A&quot;:0:{}s:9:&quot;pointer_1&quot;;R:3;s:9:&quot;pointer_2&quot;;R:2;s:5:&quot;refer&quot;;r:3;}
-<a id="__codelineno-23-29" name="__codelineno-23-29" href="#__codelineno-23-29"></a>// O:1:&quot;B&quot;:5:{s:6:&quot;ClassA&quot;;O:1:&quot;A&quot;:0:{}s:6:&quot;ClassC&quot;;O:1:&quot;C&quot;:0:{}s:9:&quot;pointer_1&quot;;R:2;s:9:&quot;pointer_2&quot;;R:3;s:5:&quot;refer&quot;;r:2;}
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>&lt;?php
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>class A{
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>}
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>class C{
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>}
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>class B{
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>    public $ClassA;
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>    public $ClassC;
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>    public $pointer_1;
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>    public $pointer_2;
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>
+<a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a>    public $refer;
+<a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>
+<a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>    public function __construct(){
+<a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a>        $this-&gt;ClassA = new A();
+<a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a>        $this-&gt;ClassC = new C();
+<a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a>        $this-&gt;refer = $this-&gt;ClassA;
+<a id="__codelineno-24-20" name="__codelineno-24-20" href="#__codelineno-24-20"></a>        $this-&gt;pointer_1 = &amp;$this-&gt;ClassA;
+<a id="__codelineno-24-21" name="__codelineno-24-21" href="#__codelineno-24-21"></a>        $this-&gt;pointer_2 = &amp;$this-&gt;ClassC;
+<a id="__codelineno-24-22" name="__codelineno-24-22" href="#__codelineno-24-22"></a>
+<a id="__codelineno-24-23" name="__codelineno-24-23" href="#__codelineno-24-23"></a>    }
+<a id="__codelineno-24-24" name="__codelineno-24-24" href="#__codelineno-24-24"></a>}
+<a id="__codelineno-24-25" name="__codelineno-24-25" href="#__codelineno-24-25"></a>$a = new B();
+<a id="__codelineno-24-26" name="__codelineno-24-26" href="#__codelineno-24-26"></a>echo serialize($a);
+<a id="__codelineno-24-27" name="__codelineno-24-27" href="#__codelineno-24-27"></a>// ----------------------- 当改变ClassA / C 的声明顺序的时候输出如下:
+<a id="__codelineno-24-28" name="__codelineno-24-28" href="#__codelineno-24-28"></a>// O:1:&quot;B&quot;:5:{s:6:&quot;ClassC&quot;;O:1:&quot;C&quot;:0:{}s:6:&quot;ClassA&quot;;O:1:&quot;A&quot;:0:{}s:9:&quot;pointer_1&quot;;R:3;s:9:&quot;pointer_2&quot;;R:2;s:5:&quot;refer&quot;;r:3;}
+<a id="__codelineno-24-29" name="__codelineno-24-29" href="#__codelineno-24-29"></a>// O:1:&quot;B&quot;:5:{s:6:&quot;ClassA&quot;;O:1:&quot;A&quot;:0:{}s:6:&quot;ClassC&quot;;O:1:&quot;C&quot;:0:{}s:9:&quot;pointer_1&quot;;R:2;s:9:&quot;pointer_2&quot;;R:3;s:5:&quot;refer&quot;;r:2;}
 </code></pre></div>
 <ul>
 <li>s:string 字符串</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="x">class a{}</span>
-<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="x">echo serialize(new a());</span>
-<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="x">------ O:1:&quot;a&quot;:0:{}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="x">class a{}</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="x">echo serialize(new a());</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="x">------ O:1:&quot;a&quot;:0:{}</span>
 </code></pre></div>
 <ul>
 <li>
 <p>S:encoded string
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="x">S:1:&quot;\61&quot;; --- 可以将16进制编码成字符，可以进行绕过特定字符</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="x">S:1:&quot;\61&quot;; --- 可以将16进制编码成字符，可以进行绕过特定字符</span>
 </code></pre></div></p>
 </li>
 <li>
 <p>N:null NULL值
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="x">echo serialize(NULL); --- N;</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="x">echo serialize(NULL); --- N;</span>
 </code></pre></div></p>
 </li>
 </ul>
@@ -1330,17 +1288,17 @@ O:1:&quot;B&quot;:3:
 <p>在 PHP 的序列化中，魔术方法（Magic Methods）是一组特殊的方法，这些方法以双下划线（<code>__</code>）作为前缀，可以在特定的序列化阶段触发从而使开发者能够进一步的控制 序列化 / 反序列化 的过程。</p>
 <p>你可以在PHP官方文档中查找到对应魔术方法的定义和使用方法：<a href="https://www.php.net/manual/zh/language.oop5.magic.php">PHP: 魔术方法 - Manual</a></p>
 <p>一般在题目中常见的几个方法如下：</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="x"> __wakeup() //------ 执行unserialize()时，先会调用这个函数</span>
-<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="x"> __sleep() //------- 执行serialize()时，先会调用这个函数</span>
-<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="x"> __destruct() //---- 对象被销毁时触发</span>
-<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="x"> __call() //-------- 在对象上下文中调用不可访问的方法时触发</span>
-<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="x"> __callStatic() //-- 在静态上下文中调用不可访问的方法时触发</span>
-<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="x"> __get() //--------- 用于从不可访问的属性读取数据或者不存在这个键都会调用此法</span>
-<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="x"> __set() //--------- 用于将数据写入不可访问的属性</span>
-<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="x"> __isset() //------- 在不可访问的属性上调用isset()或empty()触发</span>
-<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="x"> __unset() //------- 在不可访问的属性上使用unset()时触发</span>
-<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a><span class="x"> __toString() //---- 把类当作字符串使用时触发</span>
-<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="x"> __invoke() //------ 当尝试将对象调用为函数时触发</span>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="x"> __wakeup() //------ 执行unserialize()时，先会调用这个函数</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="x"> __sleep() //------- 执行serialize()时，先会调用这个函数</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="x"> __destruct() //---- 对象被销毁时触发</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="x"> __call() //-------- 在对象上下文中调用不可访问的方法时触发</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="x"> __callStatic() //-- 在静态上下文中调用不可访问的方法时触发</span>
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="x"> __get() //--------- 用于从不可访问的属性读取数据或者不存在这个键都会调用此法</span>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="x"> __set() //--------- 用于将数据写入不可访问的属性</span>
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="x"> __isset() //------- 在不可访问的属性上调用isset()或empty()触发</span>
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="x"> __unset() //------- 在不可访问的属性上使用unset()时触发</span>
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="x"> __toString() //---- 把类当作字符串使用时触发</span>
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="x"> __invoke() //------ 当尝试将对象调用为函数时触发</span>
 </code></pre></div>
 一份比较全面的表格：</p>
 <table>
